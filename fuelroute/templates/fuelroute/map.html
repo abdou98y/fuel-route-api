@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ plan.start.label }} → {{ plan.finish.label }} · Fuel plan</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <style>
+    html, body { height: 100%; margin: 0; font-family: system-ui, sans-serif; }
+    #map { position: absolute; inset: 0 360px 0 0; }
+    aside { position: absolute; top: 0; right: 0; bottom: 0; width: 360px; overflow-y: auto;
+            box-sizing: border-box; padding: 16px; background: #fafafa; border-left: 1px solid #ddd; }
+    h1 { font-size: 17px; margin: 0 0 4px; }
+    .muted { color: #666; font-size: 13px; }
+    .total { font-size: 28px; font-weight: 700; margin: 12px 0 2px; }
+    ol { padding-left: 20px; }
+    li { margin-bottom: 10px; font-size: 14px; }
+    h2 { font-size: 14px; margin: 16px 0 6px; }
+    table { width: 100%; border-collapse: collapse; font-size: 12px; }
+    td, th { padding: 4px; border-bottom: 1px solid #e5e5e5; text-align: right; }
+    td:first-child, th:first-child { text-align: left; }
+    tr.selected { font-weight: 700; background: #e3f2fd; }
+    @media (max-width: 700px) {
+      #map { inset: 0 0 45% 0; }
+      aside { top: 55%; width: 100%; border-left: 0; border-top: 1px solid #ddd; }
+    }
+  </style>
+</head>
+<body>
+<div id="map"></div>
+<aside>
+  <h1>{{ plan.start.label }} → {{ plan.finish.label }}</h1>
+  <div class="muted">{{ plan.route.distance_miles }} mi · {{ plan.route.duration_hours }} h driving</div>
+  <div class="total">${{ plan.summary.total_fuel_cost }}</div>
+  <div class="muted">
+    {{ plan.summary.total_gallons_purchased }} gal bought at {{ plan.summary.number_of_stops }} stop(s)
+    {% if plan.summary.average_price_paid %}· avg ${{ plan.summary.average_price_paid }}/gal{% endif %}<br>
+    {{ plan.vehicle.range_miles }} mi range · {{ plan.vehicle.miles_per_gallon }} mpg ·
+    starts with {{ plan.vehicle.start_fuel_gallons }} / {{ plan.vehicle.tank_gallons }} gal<br>
+    {% if plan.summary.estimated_trip_fuel_cost is not None %}
+      Whole trip incl. starting fuel ≈ ${{ plan.summary.estimated_trip_fuel_cost }}
+    {% endif %}
+    <br>Starting fuel valued at ${{ plan.vehicle.start_fuel_price_per_gallon }}/gal
+    ({{ plan.vehicle.start_fuel_price_source }})<br>
+    Driving ≈ ${{ plan.summary.estimated_driving_cost }} at ${{ plan.vehicle.driver_truck_cost_per_hour }}/h<br>
+    Stops ≈ ${{ plan.summary.estimated_stop_cost }} · Total operating cost ≈ ${{ plan.summary.estimated_total_operating_cost }}
+  </div>
+  {% if plan.route_selection.routes_compared > 1 %}
+    <h2>Routes compared</h2>
+    <table>
+      <tr><th>Route</th><th>Miles</th><th>Hours</th><th>All fuel $</th><th>Total $</th></tr>
+      {% for o in plan.route_selection.options %}
+        <tr{% if o.selected %} class="selected"{% endif %}>
+          <td>#{{ o.route_index }}{% if o.selected %} ✓{% endif %}</td>
+          <td>{{ o.distance_miles }}</td><td>{{ o.duration_hours }}</td>
+          <td>{% if o.estimated_trip_fuel_cost is not None %}{{ o.estimated_trip_fuel_cost }}{% else %}—{% endif %}</td>
+          <td>{% if o.total_operating_cost is not None %}{{ o.total_operating_cost }}{% else %}—{% endif %}</td>
+        </tr>
+      {% endfor %}
+    </table>
+    <div class="muted" style="margin-top:6px">{{ plan.route_selection.reason }}</div>
+  {% endif %}
+  <h2>Fuel stops</h2>
+  <ol>
+    {% for s in plan.fuel_stops %}
+      <li><strong>{{ s.name }}</strong><br>
+        {{ s.address }}, {{ s.city }}, {{ s.state }}<br>
+        <span class="muted">mile {{ s.mile_marker }} · ${{ s.price_per_gallon }}/gal ·
+          {{ s.gallons_purchased }} gal = ${{ s.cost }}</span></li>
+    {% empty %}
+      <li class="muted">No fuel stop needed — the starting fuel covers the trip.</li>
+    {% endfor %}
+  </ol>
+</aside>
+{{ plan.map|json_script:"route-data" }}
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+  const data = JSON.parse(document.getElementById("route-data").textContent);
+  const map = L.map("map");
+  L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+    maxZoom: 18, attribution: "&copy; OpenStreetMap contributors"
+  }).addTo(map);
+  const layer = L.geoJSON(data, {
+    style: (f) => f.properties.kind === "alternative"
+      ? { color: "#9e9e9e", weight: 4, opacity: 0.7, dashArray: "6 6" }
+      : { color: "#1e88e5", weight: 5, opacity: 0.85 },
+    pointToLayer: (f, latlng) => L.circleMarker(latlng, {
+      radius: f.properties.kind === "fuel_stop" ? 8 : 10,
+      color: "#fff", weight: 2, fillOpacity: 1, fillColor: f.properties["marker-color"]
+    }),
+    onEachFeature: (f, l) => f.properties.label && l.bindPopup(f.properties.label)
+  }).addTo(map);
+  map.fitBounds(layer.getBounds(), { padding: [20, 20] });
+</script>
+</body>
+</html>
