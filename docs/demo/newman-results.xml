@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Fuel Route API - Recording Demo (click Send)" tests="11" time="0.315">
+  <testsuite name="01. Plan route (GET) - New York to Los Angeles" id="6d30762a-4788-4891-aeb4-d44a9f2d09ac" timestamp="2026-10-07T06:08:08.783Z" tests="9" failures="0" errors="0" time="0.086">
+    <testcase name="Expected HTTP status" time="0.086" classname="01PlanRouteGetNewYorkToLosAngeles"/>
+    <testcase name="500-mile range, 10 MPG and 50-gallon tank" time="0.086" classname="01PlanRouteGetNewYorkToLosAngeles"/>
+    <testcase name="Gallons used match distance / MPG" time="0.086" classname="01PlanRouteGetNewYorkToLosAngeles"/>
+    <testcase name="Purchase totals match recommended stops" time="0.086" classname="01PlanRouteGetNewYorkToLosAngeles"/>
+    <testcase name="Starting fuel and operating costs are accounted for" time="0.086" classname="01PlanRouteGetNewYorkToLosAngeles"/>
+    <testcase name="Truck reaches every stop without exceeding tank capacity" time="0.086" classname="01PlanRouteGetNewYorkToLosAngeles"/>
+    <testcase name="Selected road has the lowest feasible operating cost" time="0.086" classname="01PlanRouteGetNewYorkToLosAngeles"/>
+    <testcase name="GeoJSON contains route, endpoints and all fuel stops" time="0.086" classname="01PlanRouteGetNewYorkToLosAngeles"/>
+    <testcase name="At most one routing API call per request" time="0.086" classname="01PlanRouteGetNewYorkToLosAngeles"/>
+  </testsuite>
+  <testsuite name="02. Repeat route (GET) - New York to Los Angeles, cache check" id="b885b8f9-9d09-4092-8e33-a9b862fb3374" timestamp="2026-10-07T06:08:08.783Z" tests="10" failures="0" errors="0" time="0.053">
+    <testcase name="Expected HTTP status" time="0.053" classname="02RepeatRouteGetNewYorkToLosAngelesCacheCheck"/>
+    <testcase name="500-mile range, 10 MPG and 50-gallon tank" time="0.053" classname="02RepeatRouteGetNewYorkToLosAngelesCacheCheck"/>
+    <testcase name="Gallons used match distance / MPG" time="0.053" classname="02RepeatRouteGetNewYorkToLosAngelesCacheCheck"/>
+    <testcase name="Purchase totals match recommended stops" time="0.053" classname="02RepeatRouteGetNewYorkToLosAngelesCacheCheck"/>
+    <testcase name="Starting fuel and operating costs are accounted for" time="0.053" classname="02RepeatRouteGetNewYorkToLosAngelesCacheCheck"/>
+    <testcase name="Truck reaches every stop without exceeding tank capacity" time="0.053" classname="02RepeatRouteGetNewYorkToLosAngelesCacheCheck"/>
+    <testcase name="Selected road has the lowest feasible operating cost" time="0.053" classname="02RepeatRouteGetNewYorkToLosAngelesCacheCheck"/>
+    <testcase name="GeoJSON contains route, endpoints and all fuel stops" time="0.053" classname="02RepeatRouteGetNewYorkToLosAngelesCacheCheck"/>
+    <testcase name="At most one routing API call per request" time="0.053" classname="02RepeatRouteGetNewYorkToLosAngelesCacheCheck"/>
+    <testcase name="Repeat route uses cache: zero routing calls" time="0.053" classname="02RepeatRouteGetNewYorkToLosAngelesCacheCheck"/>
+  </testsuite>
+  <testsuite name="03. Map (HTML) - New York to Los Angeles" id="f4f92065-e7b4-450d-a306-c05603fa5e9a" timestamp="2026-10-07T06:08:08.783Z" tests="2" failures="0" errors="0" time="0.055">
+    <testcase name="Expected HTTP status" time="0.055" classname="03MapHtmlNewYorkToLosAngeles"/>
+    <testcase name="HTML contains map and embedded GeoJSON" time="0.055" classname="03MapHtmlNewYorkToLosAngeles"/>
+  </testsuite>
+  <testsuite name="04. Compare total operating cost - Charlotte to Los Angeles" id="63649d6f-3433-443d-a098-d2ed32ecbeb0" timestamp="2026-10-07T06:08:08.783Z" tests="9" failures="0" errors="0" time="0.032">
+    <testcase name="Expected HTTP status" time="0.032" classname="04CompareTotalOperatingCostCharlotteToLosAngeles"/>
+    <testcase name="500-mile range, 10 MPG and 50-gallon tank" time="0.032" classname="04CompareTotalOperatingCostCharlotteToLosAngeles"/>
+    <testcase name="Gallons used match distance / MPG" time="0.032" classname="04CompareTotalOperatingCostCharlotteToLosAngeles"/>
+    <testcase name="Purchase totals match recommended stops" time="0.032" classname="04CompareTotalOperatingCostCharlotteToLosAngeles"/>
+    <testcase name="Starting fuel and operating costs are accounted for" time="0.032" classname="04CompareTotalOperatingCostCharlotteToLosAngeles"/>
+    <testcase name="Truck reaches every stop without exceeding tank capacity" time="0.032" classname="04CompareTotalOperatingCostCharlotteToLosAngeles"/>
+    <testcase name="Selected road has the lowest feasible operating cost" time="0.032" classname="04CompareTotalOperatingCostCharlotteToLosAngeles"/>
+    <testcase name="GeoJSON contains route, endpoints and all fuel stops" time="0.032" classname="04CompareTotalOperatingCostCharlotteToLosAngeles"/>
+    <testcase name="At most one routing API call per request" time="0.032" classname="04CompareTotalOperatingCostCharlotteToLosAngeles"/>
+  </testsuite>
+  <testsuite name="05. Plan route (POST) - Chicago to Denver, 25 gal at start" id="f75789fa-b2cb-447c-b540-eb0435c121b1" timestamp="2026-10-07T06:08:08.783Z" tests="9" failures="0" errors="0" time="0.034">
+    <testcase name="Expected HTTP status" time="0.034" classname="05PlanRoutePostChicagoToDenver25GalAtStart"/>
+    <testcase name="500-mile range, 10 MPG and 50-gallon tank" time="0.034" classname="05PlanRoutePostChicagoToDenver25GalAtStart"/>
+    <testcase name="Gallons used match distance / MPG" time="0.034" classname="05PlanRoutePostChicagoToDenver25GalAtStart"/>
+    <testcase name="Purchase totals match recommended stops" time="0.034" classname="05PlanRoutePostChicagoToDenver25GalAtStart"/>
+    <testcase name="Starting fuel and operating costs are accounted for" time="0.034" classname="05PlanRoutePostChicagoToDenver25GalAtStart"/>
+    <testcase name="Truck reaches every stop without exceeding tank capacity" time="0.034" classname="05PlanRoutePostChicagoToDenver25GalAtStart"/>
+    <testcase name="Selected road has the lowest feasible operating cost" time="0.034" classname="05PlanRoutePostChicagoToDenver25GalAtStart"/>
+    <testcase name="GeoJSON contains route, endpoints and all fuel stops" time="0.034" classname="05PlanRoutePostChicagoToDenver25GalAtStart"/>
+    <testcase name="At most one routing API call per request" time="0.034" classname="05PlanRoutePostChicagoToDenver25GalAtStart"/>
+  </testsuite>
+  <testsuite name="06. Short trip - no stop needed" id="6c23b3bf-b490-49aa-afe0-4beac5cd5d36" timestamp="2026-10-07T06:08:08.783Z" tests="10" failures="0" errors="0" time="0.010">
+    <testcase name="Expected HTTP status" time="0.010" classname="06ShortTripNoStopNeeded"/>
+    <testcase name="500-mile range, 10 MPG and 50-gallon tank" time="0.010" classname="06ShortTripNoStopNeeded"/>
+    <testcase name="Gallons used match distance / MPG" time="0.010" classname="06ShortTripNoStopNeeded"/>
+    <testcase name="Purchase totals match recommended stops" time="0.010" classname="06ShortTripNoStopNeeded"/>
+    <testcase name="Starting fuel and operating costs are accounted for" time="0.010" classname="06ShortTripNoStopNeeded"/>
+    <testcase name="Truck reaches every stop without exceeding tank capacity" time="0.010" classname="06ShortTripNoStopNeeded"/>
+    <testcase name="Selected road has the lowest feasible operating cost" time="0.010" classname="06ShortTripNoStopNeeded"/>
+    <testcase name="GeoJSON contains route, endpoints and all fuel stops" time="0.010" classname="06ShortTripNoStopNeeded"/>
+    <testcase name="At most one routing API call per request" time="0.010" classname="06ShortTripNoStopNeeded"/>
+    <testcase name="Short trip needs no fuel purchases" time="0.010" classname="06ShortTripNoStopNeeded"/>
+  </testsuite>
+  <testsuite name="07. Short trip - starting fuel valued at $3.25 per gallon" id="9960822f-46fd-4935-913e-5b2f302cbb84" timestamp="2026-10-07T06:08:08.783Z" tests="10" failures="0" errors="0" time="0.009">
+    <testcase name="Expected HTTP status" time="0.009" classname="07ShortTripStartingFuelValuedAt325PerGallon"/>
+    <testcase name="500-mile range, 10 MPG and 50-gallon tank" time="0.009" classname="07ShortTripStartingFuelValuedAt325PerGallon"/>
+    <testcase name="Gallons used match distance / MPG" time="0.009" classname="07ShortTripStartingFuelValuedAt325PerGallon"/>
+    <testcase name="Purchase totals match recommended stops" time="0.009" classname="07ShortTripStartingFuelValuedAt325PerGallon"/>
+    <testcase name="Starting fuel and operating costs are accounted for" time="0.009" classname="07ShortTripStartingFuelValuedAt325PerGallon"/>
+    <testcase name="Truck reaches every stop without exceeding tank capacity" time="0.009" classname="07ShortTripStartingFuelValuedAt325PerGallon"/>
+    <testcase name="Selected road has the lowest feasible operating cost" time="0.009" classname="07ShortTripStartingFuelValuedAt325PerGallon"/>
+    <testcase name="GeoJSON contains route, endpoints and all fuel stops" time="0.009" classname="07ShortTripStartingFuelValuedAt325PerGallon"/>
+    <testcase name="At most one routing API call per request" time="0.009" classname="07ShortTripStartingFuelValuedAt325PerGallon"/>
+    <testcase name="Short trip needs no fuel purchases" time="0.009" classname="07ShortTripStartingFuelValuedAt325PerGallon"/>
+  </testsuite>
+  <testsuite name="08. Error - outside USA (London)" id="7e2dd550-af26-4c17-b5d9-7d31410261ed" timestamp="2026-10-07T06:08:08.783Z" tests="2" failures="0" errors="0" time="0.009">
+    <testcase name="Expected HTTP status" time="0.009" classname="08ErrorOutsideUsaLondon"/>
+    <testcase name="Error has a useful message" time="0.009" classname="08ErrorOutsideUsaLondon"/>
+  </testsuite>
+  <testsuite name="09. Error - not enough starting fuel (0 gal)" id="60b3def7-32ab-4fa0-af12-7033f9c79d24" timestamp="2026-10-07T06:08:08.783Z" tests="2" failures="0" errors="0" time="0.011">
+    <testcase name="Expected HTTP status" time="0.011" classname="09ErrorNotEnoughStartingFuel0Gal"/>
+    <testcase name="Error has a useful message" time="0.011" classname="09ErrorNotEnoughStartingFuel0Gal"/>
+  </testsuite>
+  <testsuite name="10. Error - start fuel above tank size (60 gal)" id="0d4ae050-c87c-402b-8f4c-8eb8e1f4313c" timestamp="2026-10-07T06:08:08.783Z" tests="2" failures="0" errors="0" time="0.008">
+    <testcase name="Expected HTTP status" time="0.008" classname="10ErrorStartFuelAboveTankSize60Gal"/>
+    <testcase name="Error has a useful message" time="0.008" classname="10ErrorStartFuelAboveTankSize60Gal"/>
+  </testsuite>
+  <testsuite name="11. Error - negative starting fuel price" id="ed06b931-3216-4875-9c28-55aabbfaaacc" timestamp="2026-10-07T06:08:08.783Z" tests="2" failures="0" errors="0" time="0.008">
+    <testcase name="Expected HTTP status" time="0.008" classname="11ErrorNegativeStartingFuelPrice"/>
+    <testcase name="Error has a useful message" time="0.008" classname="11ErrorNegativeStartingFuelPrice"/>
+  </testsuite>
+</testsuites>

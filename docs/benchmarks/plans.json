@@ -1,0 +1,2096 @@
+[
+  {
+    "start": {
+      "query": "Charlotte, NC",
+      "label": "Charlotte, NC",
+      "latitude": 35.20894,
+      "longitude": -80.831333,
+      "source": "recorded_route"
+    },
+    "finish": {
+      "query": "Los Angeles, CA",
+      "label": "Los Angeles, CA",
+      "latitude": 34.019653,
+      "longitude": -118.41035,
+      "source": "recorded_route"
+    },
+    "route": {
+      "route_index": 0,
+      "distance_miles": 2427.1,
+      "duration_hours": 42.88,
+      "stations_considered": 291
+    },
+    "route_selection": {
+      "rule": "Lowest whole-trip fuel cost + driving hours x $50/hour + $5/stop among feasible routes.",
+      "reason": "The fastest route has the lowest total operating cost, including fuel, driving time and stops.",
+      "routes_compared": 2,
+      "options": [
+        {
+          "route_index": 0,
+          "distance_miles": 2427.1,
+          "duration_hours": 42.88,
+          "extra_minutes_vs_fastest": 0,
+          "fuel_cost": 569.91,
+          "estimated_trip_fuel_cost": 704.28,
+          "driving_cost": 2144.15,
+          "stop_cost": 25.0,
+          "total_operating_cost": 2873.43,
+          "number_of_stops": 5,
+          "error": null,
+          "selected": true
+        },
+        {
+          "route_index": 1,
+          "distance_miles": 2477.7,
+          "duration_hours": 43.8,
+          "extra_minutes_vs_fastest": 55,
+          "fuel_cost": 550.7,
+          "estimated_trip_fuel_cost": 685.06,
+          "driving_cost": 2190.15,
+          "stop_cost": 30.0,
+          "total_operating_cost": 2905.22,
+          "number_of_stops": 6,
+          "error": null,
+          "selected": false
+        }
+      ]
+    },
+    "vehicle": {
+      "range_miles": 500.0,
+      "miles_per_gallon": 10.0,
+      "tank_gallons": 50.0,
+      "start_fuel_gallons": 50.0,
+      "start_fuel_price_per_gallon": 2.68733,
+      "start_fuel_price_source": "lowest_imported_station_price",
+      "driver_truck_cost_per_hour": 50.0,
+      "assumption": "Fuel is bought only at stations on the route; the vehicle arrives with as little fuel as possible."
+    },
+    "fuel_stops": [
+      {
+        "stop_number": 1,
+        "opis_id": 72558,
+        "name": "Circle K #4703975",
+        "address": "SR-109 & US-70",
+        "city": "Lebanon",
+        "state": "TN",
+        "latitude": 36.19938,
+        "longitude": -86.34463,
+        "price_per_gallon": 2.872,
+        "mile_marker": 382.0,
+        "distance_from_route_miles": 1.1,
+        "fuel_on_arrival_gallons": 11.8,
+        "gallons_purchased": 38.2,
+        "cost": 109.72
+      },
+      {
+        "stop_number": 2,
+        "opis_id": 69149,
+        "name": "BLU STATION- LAMAR AVE",
+        "address": "I-240, EXIT 30",
+        "city": "Memphis",
+        "state": "TN",
+        "latitude": 35.10903,
+        "longitude": -89.96746,
+        "price_per_gallon": 2.969,
+        "mile_marker": 618.0,
+        "distance_from_route_miles": 4.3,
+        "fuel_on_arrival_gallons": 26.4,
+        "gallons_purchased": 13.2,
+        "cost": 39.19
+      },
+      {
+        "stop_number": 3,
+        "opis_id": 63575,
+        "name": "OKEMAH TRAVEL CENTER",
+        "address": "I-40, EXIT 221 (ST 27)",
+        "city": "Okemah",
+        "state": "OK",
+        "latitude": 35.42927,
+        "longitude": -96.30031,
+        "price_per_gallon": 2.879,
+        "mile_marker": 1014.0,
+        "distance_from_route_miles": 0.5,
+        "fuel_on_arrival_gallons": 0.0,
+        "gallons_purchased": 49.6,
+        "cost": 142.8
+      },
+      {
+        "stop_number": 4,
+        "opis_id": 69884,
+        "name": "AKAL TRAVEL CENTER",
+        "address": "I-40, EXIT 267 & SR-379",
+        "city": "Santa Rosa",
+        "state": "NM",
+        "latitude": 34.93605,
+        "longitude": -104.67502,
+        "price_per_gallon": 2.879,
+        "mile_marker": 1510.0,
+        "distance_from_route_miles": 0.6,
+        "fuel_on_arrival_gallons": 0.0,
+        "gallons_purchased": 50.0,
+        "cost": 143.95
+      },
+      {
+        "stop_number": 5,
+        "opis_id": 72044,
+        "name": "Maverik Country Store #709",
+        "address": "I-40 Exit 163",
+        "city": "Williams",
+        "state": "AZ",
+        "latitude": 35.24664,
+        "longitude": -112.1833,
+        "price_per_gallon": 3.219,
+        "mile_marker": 1980.5,
+        "distance_from_route_miles": 1.0,
+        "fuel_on_arrival_gallons": 2.95,
+        "gallons_purchased": 41.71,
+        "cost": 134.25
+      }
+    ],
+    "summary": {
+      "number_of_stops": 5,
+      "total_fuel_cost": 569.91,
+      "total_gallons_purchased": 192.71,
+      "total_gallons_used": 242.71,
+      "gallons_used_from_start_tank": 50.0,
+      "start_tank_fuel_value": 134.37,
+      "estimated_trip_fuel_cost": 704.28,
+      "estimated_driving_cost": 2144.15,
+      "estimated_stop_cost": 25.0,
+      "estimated_total_operating_cost": 2873.43,
+      "average_price_paid": 2.957
+    },
+    "meta": {
+      "routing_api_calls": 0,
+      "route_from_cache": true,
+      "elapsed_ms": 43.9
+    }
+  },
+  {
+    "start": {
+      "query": "Kansas City, MO",
+      "label": "Kansas City, MO",
+      "latitude": 39.122589,
+      "longitude": -94.555454,
+      "source": "recorded_route"
+    },
+    "finish": {
+      "query": "Las Vegas, NV",
+      "label": "Las Vegas, NV",
+      "latitude": 36.233748,
+      "longitude": -115.264026,
+      "source": "recorded_route"
+    },
+    "route": {
+      "route_index": 0,
+      "distance_miles": 1361.7,
+      "duration_hours": 23.3,
+      "stations_considered": 110
+    },
+    "route_selection": {
+      "rule": "Lowest whole-trip fuel cost + driving hours x $50/hour + $5/stop among feasible routes.",
+      "reason": "The fastest route has the lowest total operating cost, including fuel, driving time and stops.",
+      "routes_compared": 2,
+      "options": [
+        {
+          "route_index": 0,
+          "distance_miles": 1361.7,
+          "duration_hours": 23.3,
+          "extra_minutes_vs_fastest": 0,
+          "fuel_cost": 270.29,
+          "estimated_trip_fuel_cost": 404.65,
+          "driving_cost": 1165.14,
+          "stop_cost": 15.0,
+          "total_operating_cost": 1584.79,
+          "number_of_stops": 3,
+          "error": null,
+          "selected": true
+        },
+        {
+          "route_index": 1,
+          "distance_miles": 1373.9,
+          "duration_hours": 24.7,
+          "extra_minutes_vs_fastest": 84,
+          "fuel_cost": 257.75,
+          "estimated_trip_fuel_cost": 392.11,
+          "driving_cost": 1234.79,
+          "stop_cost": 15.0,
+          "total_operating_cost": 1641.9,
+          "number_of_stops": 3,
+          "error": null,
+          "selected": false
+        }
+      ]
+    },
+    "vehicle": {
+      "range_miles": 500.0,
+      "miles_per_gallon": 10.0,
+      "tank_gallons": 50.0,
+      "start_fuel_gallons": 50.0,
+      "start_fuel_price_per_gallon": 2.68733,
+      "start_fuel_price_source": "lowest_imported_station_price",
+      "driver_truck_cost_per_hour": 50.0,
+      "assumption": "Fuel is bought only at stations on the route; the vehicle arrives with as little fuel as possible."
+    },
+    "fuel_stops": [
+      {
+        "stop_number": 1,
+        "opis_id": 4199,
+        "name": "PWI #574",
+        "address": "I-70, EXIT 193/US-40",
+        "city": "Bunker Hill",
+        "state": "KS",
+        "latitude": 38.8753,
+        "longitude": -98.69894,
+        "price_per_gallon": 2.959,
+        "mile_marker": 235.0,
+        "distance_from_route_miles": 1.3,
+        "fuel_on_arrival_gallons": 26.5,
+        "gallons_purchased": 23.5,
+        "cost": 69.54
+      },
+      {
+        "stop_number": 2,
+        "opis_id": 7551,
+        "name": "PWI #525",
+        "address": "I-70, EXIT 295",
+        "city": "Watkins",
+        "state": "CO",
+        "latitude": 39.6984,
+        "longitude": -104.57722,
+        "price_per_gallon": 3.139,
+        "mile_marker": 580.5,
+        "distance_from_route_miles": 2.9,
+        "fuel_on_arrival_gallons": 15.45,
+        "gallons_purchased": 34.55,
+        "cost": 108.45
+      },
+      {
+        "stop_number": 3,
+        "opis_id": 71712,
+        "name": "MAVERIK COUNTRY STORE #693",
+        "address": "I-70, Exit 160 & hwy 191",
+        "city": "Green River",
+        "state": "UT",
+        "latitude": 38.99346,
+        "longitude": -110.17342,
+        "price_per_gallon": 3.282,
+        "mile_marker": 948.0,
+        "distance_from_route_miles": 0.3,
+        "fuel_on_arrival_gallons": 13.25,
+        "gallons_purchased": 28.12,
+        "cost": 92.3
+      }
+    ],
+    "summary": {
+      "number_of_stops": 3,
+      "total_fuel_cost": 270.29,
+      "total_gallons_purchased": 86.17,
+      "total_gallons_used": 136.17,
+      "gallons_used_from_start_tank": 50.0,
+      "start_tank_fuel_value": 134.37,
+      "estimated_trip_fuel_cost": 404.65,
+      "estimated_driving_cost": 1165.14,
+      "estimated_stop_cost": 15.0,
+      "estimated_total_operating_cost": 1584.79,
+      "average_price_paid": 3.137
+    },
+    "meta": {
+      "routing_api_calls": 0,
+      "route_from_cache": true,
+      "elapsed_ms": 8.7
+    }
+  },
+  {
+    "start": {
+      "query": "Chicago, IL",
+      "label": "Chicago, IL",
+      "latitude": 41.837057,
+      "longitude": -87.684886,
+      "source": "recorded_route"
+    },
+    "finish": {
+      "query": "Denver, CO",
+      "label": "Denver, CO",
+      "latitude": 39.762558,
+      "longitude": -104.8807,
+      "source": "recorded_route"
+    },
+    "route": {
+      "route_index": 0,
+      "distance_miles": 1002.7,
+      "duration_hours": 17.79,
+      "stations_considered": 202
+    },
+    "route_selection": {
+      "rule": "Lowest whole-trip fuel cost + driving hours x $50/hour + $5/stop among feasible routes.",
+      "reason": "The fastest route has the lowest total operating cost, including fuel, driving time and stops.",
+      "routes_compared": 2,
+      "options": [
+        {
+          "route_index": 0,
+          "distance_miles": 1002.7,
+          "duration_hours": 17.79,
+          "extra_minutes_vs_fastest": 0,
+          "fuel_cost": 141.41,
+          "estimated_trip_fuel_cost": 275.78,
+          "driving_cost": 889.62,
+          "stop_cost": 10.0,
+          "total_operating_cost": 1175.4,
+          "number_of_stops": 2,
+          "error": null,
+          "selected": true
+        },
+        {
+          "route_index": 1,
+          "distance_miles": 1103.0,
+          "duration_hours": 19.64,
+          "extra_minutes_vs_fastest": 111,
+          "fuel_cost": 179.18,
+          "estimated_trip_fuel_cost": 313.55,
+          "driving_cost": 981.77,
+          "stop_cost": 10.0,
+          "total_operating_cost": 1305.31,
+          "number_of_stops": 2,
+          "error": null,
+          "selected": false
+        }
+      ]
+    },
+    "vehicle": {
+      "range_miles": 500.0,
+      "miles_per_gallon": 10.0,
+      "tank_gallons": 50.0,
+      "start_fuel_gallons": 50.0,
+      "start_fuel_price_per_gallon": 2.68733,
+      "start_fuel_price_source": "lowest_imported_station_price",
+      "driver_truck_cost_per_hour": 50.0,
+      "assumption": "Fuel is bought only at stations on the route; the vehicle arrives with as little fuel as possible."
+    },
+    "fuel_stops": [
+      {
+        "stop_number": 1,
+        "opis_id": 69840,
+        "name": "KUM & GO #0370",
+        "address": "I-80, EXIT 439 & SR-370",
+        "city": "Gretna",
+        "state": "NE",
+        "latitude": 41.12792,
+        "longitude": -96.19686,
+        "price_per_gallon": 2.921,
+        "mile_marker": 482.0,
+        "distance_from_route_miles": 0.2,
+        "fuel_on_arrival_gallons": 1.8,
+        "gallons_purchased": 5.8,
+        "cost": 16.94
+      },
+      {
+        "stop_number": 2,
+        "opis_id": 68368,
+        "name": "AKAL TRAVEL CENTER",
+        "address": "I-80 EX 360",
+        "city": "Waco",
+        "state": "NE",
+        "latitude": 40.897,
+        "longitude": -97.46175,
+        "price_per_gallon": 2.799,
+        "mile_marker": 558.0,
+        "distance_from_route_miles": 5.2,
+        "fuel_on_arrival_gallons": 0.0,
+        "gallons_purchased": 44.47,
+        "cost": 124.47
+      }
+    ],
+    "summary": {
+      "number_of_stops": 2,
+      "total_fuel_cost": 141.41,
+      "total_gallons_purchased": 50.27,
+      "total_gallons_used": 100.27,
+      "gallons_used_from_start_tank": 50.0,
+      "start_tank_fuel_value": 134.37,
+      "estimated_trip_fuel_cost": 275.78,
+      "estimated_driving_cost": 889.62,
+      "estimated_stop_cost": 10.0,
+      "estimated_total_operating_cost": 1175.4,
+      "average_price_paid": 2.813
+    },
+    "meta": {
+      "routing_api_calls": 0,
+      "route_from_cache": true,
+      "elapsed_ms": 12.0
+    }
+  },
+  {
+    "start": {
+      "query": "Dallas, TX",
+      "label": "Dallas, TX",
+      "latitude": 32.793249,
+      "longitude": -96.766417,
+      "source": "recorded_route"
+    },
+    "finish": {
+      "query": "Houston, TX",
+      "label": "Houston, TX",
+      "latitude": 29.785756,
+      "longitude": -95.38881,
+      "source": "recorded_route"
+    },
+    "route": {
+      "route_index": 0,
+      "distance_miles": 238.3,
+      "duration_hours": 4.25,
+      "stations_considered": 37
+    },
+    "route_selection": {
+      "rule": "Lowest whole-trip fuel cost + driving hours x $50/hour + $5/stop among feasible routes.",
+      "reason": "OSRM returned a single route.",
+      "routes_compared": 1,
+      "options": [
+        {
+          "route_index": 0,
+          "distance_miles": 238.3,
+          "duration_hours": 4.25,
+          "extra_minutes_vs_fastest": 0,
+          "fuel_cost": 0,
+          "estimated_trip_fuel_cost": 64.03,
+          "driving_cost": 212.55,
+          "stop_cost": 0.0,
+          "total_operating_cost": 276.58,
+          "number_of_stops": 0,
+          "error": null,
+          "selected": true
+        }
+      ]
+    },
+    "vehicle": {
+      "range_miles": 500.0,
+      "miles_per_gallon": 10.0,
+      "tank_gallons": 50.0,
+      "start_fuel_gallons": 50.0,
+      "start_fuel_price_per_gallon": 2.68733,
+      "start_fuel_price_source": "lowest_imported_station_price",
+      "driver_truck_cost_per_hour": 50.0,
+      "assumption": "Fuel is bought only at stations on the route; the vehicle arrives with as little fuel as possible."
+    },
+    "fuel_stops": [],
+    "summary": {
+      "number_of_stops": 0,
+      "total_fuel_cost": 0,
+      "total_gallons_purchased": 0,
+      "total_gallons_used": 23.83,
+      "gallons_used_from_start_tank": 23.83,
+      "start_tank_fuel_value": 64.03,
+      "estimated_trip_fuel_cost": 64.03,
+      "estimated_driving_cost": 212.55,
+      "estimated_stop_cost": 0.0,
+      "estimated_total_operating_cost": 276.58,
+      "average_price_paid": null
+    },
+    "meta": {
+      "routing_api_calls": 0,
+      "route_from_cache": true,
+      "elapsed_ms": 1.2
+    }
+  },
+  {
+    "start": {
+      "query": "New York, NY",
+      "label": "New York, NY",
+      "latitude": 40.663098,
+      "longitude": -73.938719,
+      "source": "recorded_route"
+    },
+    "finish": {
+      "query": "Los Angeles, CA",
+      "label": "Los Angeles, CA",
+      "latitude": 34.019653,
+      "longitude": -118.41035,
+      "source": "recorded_route"
+    },
+    "route": {
+      "route_index": 1,
+      "distance_miles": 2810.5,
+      "duration_hours": 50.41,
+      "stations_considered": 411
+    },
+    "route_selection": {
+      "rule": "Lowest whole-trip fuel cost + driving hours x $50/hour + $5/stop among feasible routes.",
+      "reason": "Alternative saves $16.85 in total operating cost: $16.81 less fuel cost, $4.96 extra driving cost (6 minutes), and $5.00 less stop cost.",
+      "routes_compared": 2,
+      "options": [
+        {
+          "route_index": 0,
+          "distance_miles": 2810.4,
+          "duration_hours": 50.31,
+          "extra_minutes_vs_fastest": 0,
+          "fuel_cost": 705.69,
+          "estimated_trip_fuel_cost": 840.05,
+          "driving_cost": 2515.72,
+          "stop_cost": 30.0,
+          "total_operating_cost": 3385.78,
+          "number_of_stops": 6,
+          "error": null,
+          "selected": false
+        },
+        {
+          "route_index": 1,
+          "distance_miles": 2810.5,
+          "duration_hours": 50.41,
+          "extra_minutes_vs_fastest": 6,
+          "fuel_cost": 688.88,
+          "estimated_trip_fuel_cost": 823.24,
+          "driving_cost": 2520.68,
+          "stop_cost": 25.0,
+          "total_operating_cost": 3368.93,
+          "number_of_stops": 5,
+          "error": null,
+          "selected": true
+        }
+      ]
+    },
+    "vehicle": {
+      "range_miles": 500.0,
+      "miles_per_gallon": 10.0,
+      "tank_gallons": 50.0,
+      "start_fuel_gallons": 50.0,
+      "start_fuel_price_per_gallon": 2.68733,
+      "start_fuel_price_source": "lowest_imported_station_price",
+      "driver_truck_cost_per_hour": 50.0,
+      "assumption": "Fuel is bought only at stations on the route; the vehicle arrives with as little fuel as possible."
+    },
+    "fuel_stops": [
+      {
+        "stop_number": 1,
+        "opis_id": 72781,
+        "name": "SHEETZ #774",
+        "address": "I-70 & SR-83",
+        "city": "New Concord",
+        "state": "OH",
+        "latitude": 39.99366,
+        "longitude": -81.73806,
+        "price_per_gallon": 3.059,
+        "mile_marker": 483.5,
+        "distance_from_route_miles": 0.9,
+        "fuel_on_arrival_gallons": 1.65,
+        "gallons_purchased": 47.25,
+        "cost": 144.54
+      },
+      {
+        "stop_number": 2,
+        "opis_id": 2231,
+        "name": "QUIKTRIP #605",
+        "address": "I-270, EXIT 33",
+        "city": "Saint Louis",
+        "state": "MO",
+        "latitude": 38.6357,
+        "longitude": -90.24458,
+        "price_per_gallon": 2.899,
+        "mile_marker": 972.5,
+        "distance_from_route_miles": 1.3,
+        "fuel_on_arrival_gallons": 0.0,
+        "gallons_purchased": 48.6,
+        "cost": 140.89
+      },
+      {
+        "stop_number": 3,
+        "opis_id": 3383,
+        "name": "E-Express at Central Truck Stop",
+        "address": "I-35, EXIT 137",
+        "city": "Oklahoma City",
+        "state": "OK",
+        "latitude": 35.46708,
+        "longitude": -97.51366,
+        "price_per_gallon": 2.879,
+        "mile_marker": 1458.5,
+        "distance_from_route_miles": 9.2,
+        "fuel_on_arrival_gallons": 0.0,
+        "gallons_purchased": 43.4,
+        "cost": 124.95
+      },
+      {
+        "stop_number": 4,
+        "opis_id": 69884,
+        "name": "AKAL TRAVEL CENTER",
+        "address": "I-40, EXIT 267 & SR-379",
+        "city": "Santa Rosa",
+        "state": "NM",
+        "latitude": 34.93605,
+        "longitude": -104.67502,
+        "price_per_gallon": 2.879,
+        "mile_marker": 1892.5,
+        "distance_from_route_miles": 0.7,
+        "fuel_on_arrival_gallons": 0.0,
+        "gallons_purchased": 50.0,
+        "cost": 143.95
+      },
+      {
+        "stop_number": 5,
+        "opis_id": 72044,
+        "name": "Maverik Country Store #709",
+        "address": "I-40 Exit 163",
+        "city": "Williams",
+        "state": "AZ",
+        "latitude": 35.24664,
+        "longitude": -112.1833,
+        "price_per_gallon": 3.219,
+        "mile_marker": 2363.5,
+        "distance_from_route_miles": 1.1,
+        "fuel_on_arrival_gallons": 2.9,
+        "gallons_purchased": 41.8,
+        "cost": 134.55
+      }
+    ],
+    "summary": {
+      "number_of_stops": 5,
+      "total_fuel_cost": 688.88,
+      "total_gallons_purchased": 231.05,
+      "total_gallons_used": 281.05,
+      "gallons_used_from_start_tank": 50.0,
+      "start_tank_fuel_value": 134.37,
+      "estimated_trip_fuel_cost": 823.24,
+      "estimated_driving_cost": 2520.68,
+      "estimated_stop_cost": 25.0,
+      "estimated_total_operating_cost": 3368.93,
+      "average_price_paid": 2.982
+    },
+    "meta": {
+      "routing_api_calls": 0,
+      "route_from_cache": true,
+      "elapsed_ms": 40.9
+    }
+  },
+  {
+    "start": {
+      "query": "Chicago, IL",
+      "label": "Chicago, IL",
+      "latitude": 41.837057,
+      "longitude": -87.684886,
+      "source": "recorded_route"
+    },
+    "finish": {
+      "query": "Albuquerque, NM",
+      "label": "Albuquerque, NM",
+      "latitude": 35.104493,
+      "longitude": -106.646391,
+      "source": "recorded_route"
+    },
+    "route": {
+      "route_index": 0,
+      "distance_miles": 1332.8,
+      "duration_hours": 23.59,
+      "stations_considered": 247
+    },
+    "route_selection": {
+      "rule": "Lowest whole-trip fuel cost + driving hours x $50/hour + $5/stop among feasible routes.",
+      "reason": "The fastest route has the lowest total operating cost, including fuel, driving time and stops.",
+      "routes_compared": 2,
+      "options": [
+        {
+          "route_index": 0,
+          "distance_miles": 1332.8,
+          "duration_hours": 23.59,
+          "extra_minutes_vs_fastest": 0,
+          "fuel_cost": 239.38,
+          "estimated_trip_fuel_cost": 373.74,
+          "driving_cost": 1179.28,
+          "stop_cost": 15.0,
+          "total_operating_cost": 1568.02,
+          "number_of_stops": 3,
+          "error": null,
+          "selected": true
+        },
+        {
+          "route_index": 1,
+          "distance_miles": 1314.5,
+          "duration_hours": 24.12,
+          "extra_minutes_vs_fastest": 32,
+          "fuel_cost": 234.67,
+          "estimated_trip_fuel_cost": 369.04,
+          "driving_cost": 1205.9,
+          "stop_cost": 15.0,
+          "total_operating_cost": 1589.94,
+          "number_of_stops": 3,
+          "error": null,
+          "selected": false
+        }
+      ]
+    },
+    "vehicle": {
+      "range_miles": 500.0,
+      "miles_per_gallon": 10.0,
+      "tank_gallons": 50.0,
+      "start_fuel_gallons": 50.0,
+      "start_fuel_price_per_gallon": 2.68733,
+      "start_fuel_price_source": "lowest_imported_station_price",
+      "driver_truck_cost_per_hour": 50.0,
+      "assumption": "Fuel is bought only at stations on the route; the vehicle arrives with as little fuel as possible."
+    },
+    "fuel_stops": [
+      {
+        "stop_number": 1,
+        "opis_id": 2231,
+        "name": "QUIKTRIP #605",
+        "address": "I-270, EXIT 33",
+        "city": "Saint Louis",
+        "state": "MO",
+        "latitude": 38.6357,
+        "longitude": -90.24458,
+        "price_per_gallon": 2.899,
+        "mile_marker": 294.5,
+        "distance_from_route_miles": 1.3,
+        "fuel_on_arrival_gallons": 20.55,
+        "gallons_purchased": 28.05,
+        "cost": 81.32
+      },
+      {
+        "stop_number": 2,
+        "opis_id": 3383,
+        "name": "E-Express at Central Truck Stop",
+        "address": "I-35, EXIT 137",
+        "city": "Oklahoma City",
+        "state": "OK",
+        "latitude": 35.46708,
+        "longitude": -97.51366,
+        "price_per_gallon": 2.879,
+        "mile_marker": 780.5,
+        "distance_from_route_miles": 9.2,
+        "fuel_on_arrival_gallons": 0.0,
+        "gallons_purchased": 26.6,
+        "cost": 76.58
+      },
+      {
+        "stop_number": 3,
+        "opis_id": 72816,
+        "name": "QUIKTRIP #7914",
+        "address": "I-27 EXIT 117",
+        "city": "Amarillo",
+        "state": "TX",
+        "latitude": 35.19806,
+        "longitude": -101.83311,
+        "price_per_gallon": 2.846,
+        "mile_marker": 1046.5,
+        "distance_from_route_miles": 0.4,
+        "fuel_on_arrival_gallons": 0.0,
+        "gallons_purchased": 28.63,
+        "cost": 81.48
+      }
+    ],
+    "summary": {
+      "number_of_stops": 3,
+      "total_fuel_cost": 239.38,
+      "total_gallons_purchased": 83.28,
+      "total_gallons_used": 133.28,
+      "gallons_used_from_start_tank": 50.0,
+      "start_tank_fuel_value": 134.37,
+      "estimated_trip_fuel_cost": 373.74,
+      "estimated_driving_cost": 1179.28,
+      "estimated_stop_cost": 15.0,
+      "estimated_total_operating_cost": 1568.02,
+      "average_price_paid": 2.874
+    },
+    "meta": {
+      "routing_api_calls": 0,
+      "route_from_cache": true,
+      "elapsed_ms": 14.0
+    }
+  },
+  {
+    "start": {
+      "query": "Oklahoma City, OK",
+      "label": "Oklahoma City, OK",
+      "latitude": 35.467036,
+      "longitude": -97.514196,
+      "source": "recorded_route"
+    },
+    "finish": {
+      "query": "Boise, ID",
+      "label": "Boise, ID",
+      "latitude": 43.616617,
+      "longitude": -116.200888,
+      "source": "recorded_route"
+    },
+    "route": {
+      "route_index": 0,
+      "distance_miles": 1484.7,
+      "duration_hours": 24.91,
+      "stations_considered": 151
+    },
+    "route_selection": {
+      "rule": "Lowest whole-trip fuel cost + driving hours x $50/hour + $5/stop among feasible routes.",
+      "reason": "The fastest route has the lowest total operating cost, including fuel, driving time and stops.",
+      "routes_compared": 2,
+      "options": [
+        {
+          "route_index": 0,
+          "distance_miles": 1484.7,
+          "duration_hours": 24.91,
+          "extra_minutes_vs_fastest": 0,
+          "fuel_cost": 301.75,
+          "estimated_trip_fuel_cost": 436.12,
+          "driving_cost": 1245.62,
+          "stop_cost": 15.0,
+          "total_operating_cost": 1696.74,
+          "number_of_stops": 3,
+          "error": null,
+          "selected": true
+        },
+        {
+          "route_index": 1,
+          "distance_miles": 1474.2,
+          "duration_hours": 26.56,
+          "extra_minutes_vs_fastest": 99,
+          "fuel_cost": 299.92,
+          "estimated_trip_fuel_cost": 434.28,
+          "driving_cost": 1328.19,
+          "stop_cost": 15.0,
+          "total_operating_cost": 1777.48,
+          "number_of_stops": 3,
+          "error": null,
+          "selected": false
+        }
+      ]
+    },
+    "vehicle": {
+      "range_miles": 500.0,
+      "miles_per_gallon": 10.0,
+      "tank_gallons": 50.0,
+      "start_fuel_gallons": 50.0,
+      "start_fuel_price_per_gallon": 2.68733,
+      "start_fuel_price_source": "lowest_imported_station_price",
+      "driver_truck_cost_per_hour": 50.0,
+      "assumption": "Fuel is bought only at stations on the route; the vehicle arrives with as little fuel as possible."
+    },
+    "fuel_stops": [
+      {
+        "stop_number": 1,
+        "opis_id": 4199,
+        "name": "PWI #574",
+        "address": "I-70, EXIT 193/US-40",
+        "city": "Bunker Hill",
+        "state": "KS",
+        "latitude": 38.8753,
+        "longitude": -98.69894,
+        "price_per_gallon": 2.959,
+        "mile_marker": 306.5,
+        "distance_from_route_miles": 1.3,
+        "fuel_on_arrival_gallons": 19.35,
+        "gallons_purchased": 30.65,
+        "cost": 90.69
+      },
+      {
+        "stop_number": 2,
+        "opis_id": 4700,
+        "name": "A C TRUCKSTOP",
+        "address": "I-80, EXIT 290",
+        "city": "Laramie",
+        "state": "WY",
+        "latitude": 41.30595,
+        "longitude": -105.60864,
+        "price_per_gallon": 3.079,
+        "mile_marker": 798.5,
+        "distance_from_route_miles": 0.3,
+        "fuel_on_arrival_gallons": 0.8,
+        "gallons_purchased": 49.2,
+        "cost": 151.49
+      },
+      {
+        "stop_number": 3,
+        "opis_id": 66804,
+        "name": "PWI #586",
+        "address": "I-80, EXIT 104  & US-191",
+        "city": "Rock Springs",
+        "state": "WY",
+        "latitude": 41.5947,
+        "longitude": -109.22092,
+        "price_per_gallon": 3.199,
+        "mile_marker": 1005.5,
+        "distance_from_route_miles": 1.0,
+        "fuel_on_arrival_gallons": 29.3,
+        "gallons_purchased": 18.62,
+        "cost": 59.57
+      }
+    ],
+    "summary": {
+      "number_of_stops": 3,
+      "total_fuel_cost": 301.75,
+      "total_gallons_purchased": 98.47,
+      "total_gallons_used": 148.47,
+      "gallons_used_from_start_tank": 50.0,
+      "start_tank_fuel_value": 134.37,
+      "estimated_trip_fuel_cost": 436.12,
+      "estimated_driving_cost": 1245.62,
+      "estimated_stop_cost": 15.0,
+      "estimated_total_operating_cost": 1696.74,
+      "average_price_paid": 3.064
+    },
+    "meta": {
+      "routing_api_calls": 0,
+      "route_from_cache": true,
+      "elapsed_ms": 11.1
+    }
+  },
+  {
+    "start": {
+      "query": "Salt Lake City, UT",
+      "label": "Salt Lake City, UT",
+      "latitude": 40.776446,
+      "longitude": -111.93032,
+      "source": "recorded_route"
+    },
+    "finish": {
+      "query": "Jacksonville, FL",
+      "label": "Jacksonville, FL",
+      "latitude": 30.337173,
+      "longitude": -81.661748,
+      "source": "recorded_route"
+    },
+    "route": {
+      "route_index": 0,
+      "distance_miles": 2227.6,
+      "duration_hours": 39.53,
+      "stations_considered": 358
+    },
+    "route_selection": {
+      "rule": "Lowest whole-trip fuel cost + driving hours x $50/hour + $5/stop among feasible routes.",
+      "reason": "The fastest route has the lowest total operating cost, including fuel, driving time and stops.",
+      "routes_compared": 2,
+      "options": [
+        {
+          "route_index": 0,
+          "distance_miles": 2227.6,
+          "duration_hours": 39.53,
+          "extra_minutes_vs_fastest": 0,
+          "fuel_cost": 496.76,
+          "estimated_trip_fuel_cost": 631.13,
+          "driving_cost": 1976.4,
+          "stop_cost": 20.0,
+          "total_operating_cost": 2627.53,
+          "number_of_stops": 4,
+          "error": null,
+          "selected": true
+        },
+        {
+          "route_index": 1,
+          "distance_miles": 2233.9,
+          "duration_hours": 41.54,
+          "extra_minutes_vs_fastest": 121,
+          "fuel_cost": 501.93,
+          "estimated_trip_fuel_cost": 636.3,
+          "driving_cost": 2076.83,
+          "stop_cost": 25.0,
+          "total_operating_cost": 2738.13,
+          "number_of_stops": 5,
+          "error": null,
+          "selected": false
+        }
+      ]
+    },
+    "vehicle": {
+      "range_miles": 500.0,
+      "miles_per_gallon": 10.0,
+      "tank_gallons": 50.0,
+      "start_fuel_gallons": 50.0,
+      "start_fuel_price_per_gallon": 2.68733,
+      "start_fuel_price_source": "lowest_imported_station_price",
+      "driver_truck_cost_per_hour": 50.0,
+      "assumption": "Fuel is bought only at stations on the route; the vehicle arrives with as little fuel as possible."
+    },
+    "fuel_stops": [
+      {
+        "stop_number": 1,
+        "opis_id": 4700,
+        "name": "A C TRUCKSTOP",
+        "address": "I-80, EXIT 290",
+        "city": "Laramie",
+        "state": "WY",
+        "latitude": 41.30595,
+        "longitude": -105.60864,
+        "price_per_gallon": 3.079,
+        "mile_marker": 391.5,
+        "distance_from_route_miles": 0.3,
+        "fuel_on_arrival_gallons": 10.85,
+        "gallons_purchased": 34.15,
+        "cost": 105.15
+      },
+      {
+        "stop_number": 2,
+        "opis_id": 68368,
+        "name": "AKAL TRAVEL CENTER",
+        "address": "I-80 EX 360",
+        "city": "Waco",
+        "state": "NE",
+        "latitude": 40.897,
+        "longitude": -97.46175,
+        "price_per_gallon": 2.799,
+        "mile_marker": 841.5,
+        "distance_from_route_miles": 5.2,
+        "fuel_on_arrival_gallons": 0.0,
+        "gallons_purchased": 50.0,
+        "cost": 139.95
+      },
+      {
+        "stop_number": 3,
+        "opis_id": 2231,
+        "name": "QUIKTRIP #605",
+        "address": "I-270, EXIT 33",
+        "city": "Saint Louis",
+        "state": "MO",
+        "latitude": 38.6357,
+        "longitude": -90.24458,
+        "price_per_gallon": 2.899,
+        "mile_marker": 1327.5,
+        "distance_from_route_miles": 3.0,
+        "fuel_on_arrival_gallons": 1.4,
+        "gallons_purchased": 42.65,
+        "cost": 123.64
+      },
+      {
+        "stop_number": 4,
+        "opis_id": 6180,
+        "name": "Circle #4703923",
+        "address": "I-24, EXIT 180B & US-27",
+        "city": "Chattanooga",
+        "state": "TN",
+        "latitude": 35.06596,
+        "longitude": -85.24839,
+        "price_per_gallon": 2.786,
+        "mile_marker": 1768.0,
+        "distance_from_route_miles": 3.2,
+        "fuel_on_arrival_gallons": 0.0,
+        "gallons_purchased": 45.96,
+        "cost": 128.02
+      }
+    ],
+    "summary": {
+      "number_of_stops": 4,
+      "total_fuel_cost": 496.76,
+      "total_gallons_purchased": 172.76,
+      "total_gallons_used": 222.76,
+      "gallons_used_from_start_tank": 50.0,
+      "start_tank_fuel_value": 134.37,
+      "estimated_trip_fuel_cost": 631.13,
+      "estimated_driving_cost": 1976.4,
+      "estimated_stop_cost": 20.0,
+      "estimated_total_operating_cost": 2627.53,
+      "average_price_paid": 2.875
+    },
+    "meta": {
+      "routing_api_calls": 0,
+      "route_from_cache": true,
+      "elapsed_ms": 24.8
+    }
+  },
+  {
+    "start": {
+      "query": "Atlanta, GA",
+      "label": "Atlanta, GA",
+      "latitude": 33.76291,
+      "longitude": -84.422122,
+      "source": "recorded_route"
+    },
+    "finish": {
+      "query": "Miami, FL",
+      "label": "Miami, FL",
+      "latitude": 25.774687,
+      "longitude": -80.208595,
+      "source": "recorded_route"
+    },
+    "route": {
+      "route_index": 0,
+      "distance_miles": 663.3,
+      "duration_hours": 12.12,
+      "stations_considered": 114
+    },
+    "route_selection": {
+      "rule": "Lowest whole-trip fuel cost + driving hours x $50/hour + $5/stop among feasible routes.",
+      "reason": "OSRM returned a single route.",
+      "routes_compared": 1,
+      "options": [
+        {
+          "route_index": 0,
+          "distance_miles": 663.3,
+          "duration_hours": 12.12,
+          "extra_minutes_vs_fastest": 0,
+          "fuel_cost": 48.48,
+          "estimated_trip_fuel_cost": 182.85,
+          "driving_cost": 605.8,
+          "stop_cost": 5.0,
+          "total_operating_cost": 793.65,
+          "number_of_stops": 1,
+          "error": null,
+          "selected": true
+        }
+      ]
+    },
+    "vehicle": {
+      "range_miles": 500.0,
+      "miles_per_gallon": 10.0,
+      "tank_gallons": 50.0,
+      "start_fuel_gallons": 50.0,
+      "start_fuel_price_per_gallon": 2.68733,
+      "start_fuel_price_source": "lowest_imported_station_price",
+      "driver_truck_cost_per_hour": 50.0,
+      "assumption": "Fuel is bought only at stations on the route; the vehicle arrives with as little fuel as possible."
+    },
+    "fuel_stops": [
+      {
+        "stop_number": 1,
+        "opis_id": 70429,
+        "name": "BP",
+        "address": "SR-76",
+        "city": "Adel",
+        "state": "GA",
+        "latitude": 31.12481,
+        "longitude": -83.42547,
+        "price_per_gallon": 2.969,
+        "mile_marker": 206.0,
+        "distance_from_route_miles": 0.5,
+        "fuel_on_arrival_gallons": 29.4,
+        "gallons_purchased": 16.33,
+        "cost": 48.48
+      }
+    ],
+    "summary": {
+      "number_of_stops": 1,
+      "total_fuel_cost": 48.48,
+      "total_gallons_purchased": 16.33,
+      "total_gallons_used": 66.33,
+      "gallons_used_from_start_tank": 50.0,
+      "start_tank_fuel_value": 134.37,
+      "estimated_trip_fuel_cost": 182.85,
+      "estimated_driving_cost": 605.8,
+      "estimated_stop_cost": 5.0,
+      "estimated_total_operating_cost": 793.65,
+      "average_price_paid": 2.969
+    },
+    "meta": {
+      "routing_api_calls": 0,
+      "route_from_cache": true,
+      "elapsed_ms": 3.6
+    }
+  },
+  {
+    "start": "Seattle, WA",
+    "finish": "San Francisco, CA",
+    "error": "No fuel station within 500 miles after mile 260 of the route."
+  },
+  {
+    "start": {
+      "query": "Boston, MA",
+      "label": "Boston, MA",
+      "latitude": 42.338808,
+      "longitude": -71.018279,
+      "source": "recorded_route"
+    },
+    "finish": {
+      "query": "Washington, DC",
+      "label": "Washington, DC",
+      "latitude": 38.90425,
+      "longitude": -77.016185,
+      "source": "recorded_route"
+    },
+    "route": {
+      "route_index": 0,
+      "distance_miles": 439.2,
+      "duration_hours": 9.24,
+      "stations_considered": 154
+    },
+    "route_selection": {
+      "rule": "Lowest whole-trip fuel cost + driving hours x $50/hour + $5/stop among feasible routes.",
+      "reason": "The fastest route has the lowest total operating cost, including fuel, driving time and stops.",
+      "routes_compared": 2,
+      "options": [
+        {
+          "route_index": 0,
+          "distance_miles": 439.2,
+          "duration_hours": 9.24,
+          "extra_minutes_vs_fastest": 0,
+          "fuel_cost": 0,
+          "estimated_trip_fuel_cost": 118.04,
+          "driving_cost": 461.97,
+          "stop_cost": 0.0,
+          "total_operating_cost": 580.01,
+          "number_of_stops": 0,
+          "error": null,
+          "selected": true
+        },
+        {
+          "route_index": 1,
+          "distance_miles": 477.0,
+          "duration_hours": 9.88,
+          "extra_minutes_vs_fastest": 38,
+          "fuel_cost": 0,
+          "estimated_trip_fuel_cost": 128.19,
+          "driving_cost": 493.78,
+          "stop_cost": 0.0,
+          "total_operating_cost": 621.97,
+          "number_of_stops": 0,
+          "error": null,
+          "selected": false
+        }
+      ]
+    },
+    "vehicle": {
+      "range_miles": 500.0,
+      "miles_per_gallon": 10.0,
+      "tank_gallons": 50.0,
+      "start_fuel_gallons": 50.0,
+      "start_fuel_price_per_gallon": 2.68733,
+      "start_fuel_price_source": "lowest_imported_station_price",
+      "driver_truck_cost_per_hour": 50.0,
+      "assumption": "Fuel is bought only at stations on the route; the vehicle arrives with as little fuel as possible."
+    },
+    "fuel_stops": [],
+    "summary": {
+      "number_of_stops": 0,
+      "total_fuel_cost": 0,
+      "total_gallons_purchased": 0,
+      "total_gallons_used": 43.92,
+      "gallons_used_from_start_tank": 43.92,
+      "start_tank_fuel_value": 118.04,
+      "estimated_trip_fuel_cost": 118.04,
+      "estimated_driving_cost": 461.97,
+      "estimated_stop_cost": 0.0,
+      "estimated_total_operating_cost": 580.01,
+      "average_price_paid": null
+    },
+    "meta": {
+      "routing_api_calls": 0,
+      "route_from_cache": true,
+      "elapsed_ms": 11.1
+    }
+  },
+  {
+    "start": {
+      "query": "Phoenix, AZ",
+      "label": "Phoenix, AZ",
+      "latitude": 33.572068,
+      "longitude": -112.090405,
+      "source": "recorded_route"
+    },
+    "finish": {
+      "query": "San Diego, CA",
+      "label": "San Diego, CA",
+      "latitude": 32.816756,
+      "longitude": -117.13252,
+      "source": "recorded_route"
+    },
+    "route": {
+      "route_index": 0,
+      "distance_miles": 360.5,
+      "duration_hours": 6.72,
+      "stations_considered": 38
+    },
+    "route_selection": {
+      "rule": "Lowest whole-trip fuel cost + driving hours x $50/hour + $5/stop among feasible routes.",
+      "reason": "The fastest route has the lowest total operating cost, including fuel, driving time and stops.",
+      "routes_compared": 2,
+      "options": [
+        {
+          "route_index": 0,
+          "distance_miles": 360.5,
+          "duration_hours": 6.72,
+          "extra_minutes_vs_fastest": 0,
+          "fuel_cost": 0,
+          "estimated_trip_fuel_cost": 96.89,
+          "driving_cost": 335.84,
+          "stop_cost": 0.0,
+          "total_operating_cost": 432.72,
+          "number_of_stops": 0,
+          "error": null,
+          "selected": true
+        },
+        {
+          "route_index": 1,
+          "distance_miles": 387.5,
+          "duration_hours": 7.17,
+          "extra_minutes_vs_fastest": 27,
+          "fuel_cost": 0,
+          "estimated_trip_fuel_cost": 104.12,
+          "driving_cost": 358.58,
+          "stop_cost": 0.0,
+          "total_operating_cost": 462.7,
+          "number_of_stops": 0,
+          "error": null,
+          "selected": false
+        }
+      ]
+    },
+    "vehicle": {
+      "range_miles": 500.0,
+      "miles_per_gallon": 10.0,
+      "tank_gallons": 50.0,
+      "start_fuel_gallons": 50.0,
+      "start_fuel_price_per_gallon": 2.68733,
+      "start_fuel_price_source": "lowest_imported_station_price",
+      "driver_truck_cost_per_hour": 50.0,
+      "assumption": "Fuel is bought only at stations on the route; the vehicle arrives with as little fuel as possible."
+    },
+    "fuel_stops": [],
+    "summary": {
+      "number_of_stops": 0,
+      "total_fuel_cost": 0,
+      "total_gallons_purchased": 0,
+      "total_gallons_used": 36.05,
+      "gallons_used_from_start_tank": 36.05,
+      "start_tank_fuel_value": 96.89,
+      "estimated_trip_fuel_cost": 96.89,
+      "estimated_driving_cost": 335.84,
+      "estimated_stop_cost": 0.0,
+      "estimated_total_operating_cost": 432.72,
+      "average_price_paid": null
+    },
+    "meta": {
+      "routing_api_calls": 0,
+      "route_from_cache": true,
+      "elapsed_ms": 2.7
+    }
+  },
+  {
+    "start": {
+      "query": "Memphis, TN",
+      "label": "Memphis, TN",
+      "latitude": 35.109037,
+      "longitude": -89.968031,
+      "source": "recorded_route"
+    },
+    "finish": {
+      "query": "Dallas, TX",
+      "label": "Dallas, TX",
+      "latitude": 32.793249,
+      "longitude": -96.766417,
+      "source": "recorded_route"
+    },
+    "route": {
+      "route_index": 0,
+      "distance_miles": 457.1,
+      "duration_hours": 7.93,
+      "stations_considered": 88
+    },
+    "route_selection": {
+      "rule": "Lowest whole-trip fuel cost + driving hours x $50/hour + $5/stop among feasible routes.",
+      "reason": "The fastest route has the lowest total operating cost, including fuel, driving time and stops.",
+      "routes_compared": 2,
+      "options": [
+        {
+          "route_index": 0,
+          "distance_miles": 457.1,
+          "duration_hours": 7.93,
+          "extra_minutes_vs_fastest": 0,
+          "fuel_cost": 0,
+          "estimated_trip_fuel_cost": 122.82,
+          "driving_cost": 396.5,
+          "stop_cost": 0.0,
+          "total_operating_cost": 519.32,
+          "number_of_stops": 0,
+          "error": null,
+          "selected": true
+        },
+        {
+          "route_index": 1,
+          "distance_miles": 504.2,
+          "duration_hours": 8.93,
+          "extra_minutes_vs_fastest": 60,
+          "fuel_cost": 1.17,
+          "estimated_trip_fuel_cost": 135.53,
+          "driving_cost": 446.54,
+          "stop_cost": 5.0,
+          "total_operating_cost": 587.08,
+          "number_of_stops": 1,
+          "error": null,
+          "selected": false
+        }
+      ]
+    },
+    "vehicle": {
+      "range_miles": 500.0,
+      "miles_per_gallon": 10.0,
+      "tank_gallons": 50.0,
+      "start_fuel_gallons": 50.0,
+      "start_fuel_price_per_gallon": 2.68733,
+      "start_fuel_price_source": "lowest_imported_station_price",
+      "driver_truck_cost_per_hour": 50.0,
+      "assumption": "Fuel is bought only at stations on the route; the vehicle arrives with as little fuel as possible."
+    },
+    "fuel_stops": [],
+    "summary": {
+      "number_of_stops": 0,
+      "total_fuel_cost": 0,
+      "total_gallons_purchased": 0,
+      "total_gallons_used": 45.71,
+      "gallons_used_from_start_tank": 45.71,
+      "start_tank_fuel_value": 122.82,
+      "estimated_trip_fuel_cost": 122.82,
+      "estimated_driving_cost": 396.5,
+      "estimated_stop_cost": 0.0,
+      "estimated_total_operating_cost": 519.32,
+      "average_price_paid": null
+    },
+    "meta": {
+      "routing_api_calls": 0,
+      "route_from_cache": true,
+      "elapsed_ms": 4.0
+    }
+  },
+  {
+    "start": {
+      "query": "Minneapolis, MN",
+      "label": "Minneapolis, MN",
+      "latitude": 44.9635,
+      "longitude": -93.268205,
+      "source": "recorded_route"
+    },
+    "finish": {
+      "query": "Nashville, TN",
+      "label": "Nashville, TN",
+      "latitude": 36.171622,
+      "longitude": -86.7847,
+      "source": "recorded_route"
+    },
+    "route": {
+      "route_index": 0,
+      "distance_miles": 881.0,
+      "duration_hours": 15.91,
+      "stations_considered": 186
+    },
+    "route_selection": {
+      "rule": "Lowest whole-trip fuel cost + driving hours x $50/hour + $5/stop among feasible routes.",
+      "reason": "The fastest route has the lowest total operating cost, including fuel, driving time and stops.",
+      "routes_compared": 2,
+      "options": [
+        {
+          "route_index": 0,
+          "distance_miles": 881.0,
+          "duration_hours": 15.91,
+          "extra_minutes_vs_fastest": 0,
+          "fuel_cost": 113.12,
+          "estimated_trip_fuel_cost": 247.49,
+          "driving_cost": 795.57,
+          "stop_cost": 5.0,
+          "total_operating_cost": 1048.06,
+          "number_of_stops": 1,
+          "error": null,
+          "selected": true
+        },
+        {
+          "route_index": 1,
+          "distance_miles": 865.5,
+          "duration_hours": 16.4,
+          "extra_minutes_vs_fastest": 29,
+          "fuel_cost": 110.21,
+          "estimated_trip_fuel_cost": 244.58,
+          "driving_cost": 819.79,
+          "stop_cost": 5.0,
+          "total_operating_cost": 1069.37,
+          "number_of_stops": 1,
+          "error": null,
+          "selected": false
+        }
+      ]
+    },
+    "vehicle": {
+      "range_miles": 500.0,
+      "miles_per_gallon": 10.0,
+      "tank_gallons": 50.0,
+      "start_fuel_gallons": 50.0,
+      "start_fuel_price_per_gallon": 2.68733,
+      "start_fuel_price_source": "lowest_imported_station_price",
+      "driver_truck_cost_per_hour": 50.0,
+      "assumption": "Fuel is bought only at stations on the route; the vehicle arrives with as little fuel as possible."
+    },
+    "fuel_stops": [
+      {
+        "stop_number": 1,
+        "opis_id": 70744,
+        "name": "CASEYS #3686",
+        "address": "I-80 EXIT 81",
+        "city": "Utica",
+        "state": "IL",
+        "latitude": 41.3456,
+        "longitude": -88.98634,
+        "price_per_gallon": 2.969,
+        "mile_marker": 396.0,
+        "distance_from_route_miles": 4.0,
+        "fuel_on_arrival_gallons": 10.4,
+        "gallons_purchased": 38.1,
+        "cost": 113.12
+      }
+    ],
+    "summary": {
+      "number_of_stops": 1,
+      "total_fuel_cost": 113.12,
+      "total_gallons_purchased": 38.1,
+      "total_gallons_used": 88.1,
+      "gallons_used_from_start_tank": 50.0,
+      "start_tank_fuel_value": 134.37,
+      "estimated_trip_fuel_cost": 247.49,
+      "estimated_driving_cost": 795.57,
+      "estimated_stop_cost": 5.0,
+      "estimated_total_operating_cost": 1048.06,
+      "average_price_paid": 2.969
+    },
+    "meta": {
+      "routing_api_calls": 0,
+      "route_from_cache": true,
+      "elapsed_ms": 12.5
+    }
+  },
+  {
+    "start": {
+      "query": "Portland, OR",
+      "label": "Portland, OR",
+      "latitude": 45.536951,
+      "longitude": -122.649476,
+      "source": "recorded_route"
+    },
+    "finish": {
+      "query": "Denver, CO",
+      "label": "Denver, CO",
+      "latitude": 39.762558,
+      "longitude": -104.8807,
+      "source": "recorded_route"
+    },
+    "route": {
+      "route_index": 0,
+      "distance_miles": 1243.7,
+      "duration_hours": 21.42,
+      "stations_considered": 114
+    },
+    "route_selection": {
+      "rule": "Lowest whole-trip fuel cost + driving hours x $50/hour + $5/stop among feasible routes.",
+      "reason": "OSRM returned a single route.",
+      "routes_compared": 1,
+      "options": [
+        {
+          "route_index": 0,
+          "distance_miles": 1243.7,
+          "duration_hours": 21.42,
+          "extra_minutes_vs_fastest": 0,
+          "fuel_cost": 244.78,
+          "estimated_trip_fuel_cost": 379.15,
+          "driving_cost": 1071.16,
+          "stop_cost": 10.0,
+          "total_operating_cost": 1460.31,
+          "number_of_stops": 2,
+          "error": null,
+          "selected": true
+        }
+      ]
+    },
+    "vehicle": {
+      "range_miles": 500.0,
+      "miles_per_gallon": 10.0,
+      "tank_gallons": 50.0,
+      "start_fuel_gallons": 50.0,
+      "start_fuel_price_per_gallon": 2.68733,
+      "start_fuel_price_source": "lowest_imported_station_price",
+      "driver_truck_cost_per_hour": 50.0,
+      "assumption": "Fuel is bought only at stations on the route; the vehicle arrives with as little fuel as possible."
+    },
+    "fuel_stops": [
+      {
+        "stop_number": 1,
+        "opis_id": 70360,
+        "name": "MAVERIK COUNTRY STORE #595",
+        "address": "I-84, EXIT 28",
+        "city": "Caldwell",
+        "state": "ID",
+        "latitude": 43.64588,
+        "longitude": -116.65934,
+        "price_per_gallon": 3.369,
+        "mile_marker": 404.5,
+        "distance_from_route_miles": 0.5,
+        "fuel_on_arrival_gallons": 9.55,
+        "gallons_purchased": 40.4,
+        "cost": 136.11
+      },
+      {
+        "stop_number": 2,
+        "opis_id": 66804,
+        "name": "PWI #586",
+        "address": "I-80, EXIT 104  & US-191",
+        "city": "Rock Springs",
+        "state": "WY",
+        "latitude": 41.5947,
+        "longitude": -109.22092,
+        "price_per_gallon": 3.199,
+        "mile_marker": 904.0,
+        "distance_from_route_miles": 1.0,
+        "fuel_on_arrival_gallons": 0.0,
+        "gallons_purchased": 33.97,
+        "cost": 108.68
+      }
+    ],
+    "summary": {
+      "number_of_stops": 2,
+      "total_fuel_cost": 244.78,
+      "total_gallons_purchased": 74.37,
+      "total_gallons_used": 124.37,
+      "gallons_used_from_start_tank": 50.0,
+      "start_tank_fuel_value": 134.37,
+      "estimated_trip_fuel_cost": 379.15,
+      "estimated_driving_cost": 1071.16,
+      "estimated_stop_cost": 10.0,
+      "estimated_total_operating_cost": 1460.31,
+      "average_price_paid": 3.291
+    },
+    "meta": {
+      "routing_api_calls": 0,
+      "route_from_cache": true,
+      "elapsed_ms": 4.8
+    }
+  },
+  {
+    "start": {
+      "query": "Indianapolis, IN",
+      "label": "Indianapolis, IN",
+      "latitude": 39.776659,
+      "longitude": -86.145858,
+      "source": "recorded_route"
+    },
+    "finish": {
+      "query": "New Orleans, LA",
+      "label": "New Orleans, LA",
+      "latitude": 30.053433,
+      "longitude": -89.934524,
+      "source": "recorded_route"
+    },
+    "route": {
+      "route_index": 0,
+      "distance_miles": 808.1,
+      "duration_hours": 14.79,
+      "stations_considered": 149
+    },
+    "route_selection": {
+      "rule": "Lowest whole-trip fuel cost + driving hours x $50/hour + $5/stop among feasible routes.",
+      "reason": "The fastest route has the lowest total operating cost, including fuel, driving time and stops.",
+      "routes_compared": 2,
+      "options": [
+        {
+          "route_index": 0,
+          "distance_miles": 808.1,
+          "duration_hours": 14.79,
+          "extra_minutes_vs_fastest": 0,
+          "fuel_cost": 89.41,
+          "estimated_trip_fuel_cost": 223.78,
+          "driving_cost": 739.64,
+          "stop_cost": 5.0,
+          "total_operating_cost": 968.41,
+          "number_of_stops": 1,
+          "error": null,
+          "selected": true
+        },
+        {
+          "route_index": 1,
+          "distance_miles": 859.2,
+          "duration_hours": 15.84,
+          "extra_minutes_vs_fastest": 63,
+          "fuel_cost": 104.73,
+          "estimated_trip_fuel_cost": 239.1,
+          "driving_cost": 791.9,
+          "stop_cost": 5.0,
+          "total_operating_cost": 1036.0,
+          "number_of_stops": 1,
+          "error": null,
+          "selected": false
+        }
+      ]
+    },
+    "vehicle": {
+      "range_miles": 500.0,
+      "miles_per_gallon": 10.0,
+      "tank_gallons": 50.0,
+      "start_fuel_gallons": 50.0,
+      "start_fuel_price_per_gallon": 2.68733,
+      "start_fuel_price_source": "lowest_imported_station_price",
+      "driver_truck_cost_per_hour": 50.0,
+      "assumption": "Fuel is bought only at stations on the route; the vehicle arrives with as little fuel as possible."
+    },
+    "fuel_stops": [
+      {
+        "stop_number": 1,
+        "opis_id": 71329,
+        "name": "SPEEDWAY #1439",
+        "address": "I-20 Exit 100",
+        "city": "Mc Calla",
+        "state": "AL",
+        "latitude": 33.30311,
+        "longitude": -87.02666,
+        "price_per_gallon": 2.902,
+        "mile_marker": 498.0,
+        "distance_from_route_miles": 1.9,
+        "fuel_on_arrival_gallons": 0.2,
+        "gallons_purchased": 30.81,
+        "cost": 89.41
+      }
+    ],
+    "summary": {
+      "number_of_stops": 1,
+      "total_fuel_cost": 89.41,
+      "total_gallons_purchased": 30.81,
+      "total_gallons_used": 80.81,
+      "gallons_used_from_start_tank": 50.0,
+      "start_tank_fuel_value": 134.37,
+      "estimated_trip_fuel_cost": 223.78,
+      "estimated_driving_cost": 739.64,
+      "estimated_stop_cost": 5.0,
+      "estimated_total_operating_cost": 968.41,
+      "average_price_paid": 2.902
+    },
+    "meta": {
+      "routing_api_calls": 0,
+      "route_from_cache": true,
+      "elapsed_ms": 8.8
+    }
+  },
+  {
+    "start": {
+      "query": "Houston, TX",
+      "label": "Houston, TX",
+      "latitude": 29.785756,
+      "longitude": -95.38881,
+      "source": "recorded_route"
+    },
+    "finish": {
+      "query": "San Antonio, TX",
+      "label": "San Antonio, TX",
+      "latitude": 29.462839,
+      "longitude": -98.524518,
+      "source": "recorded_route"
+    },
+    "route": {
+      "route_index": 0,
+      "distance_miles": 196.6,
+      "duration_hours": 3.58,
+      "stations_considered": 38
+    },
+    "route_selection": {
+      "rule": "Lowest whole-trip fuel cost + driving hours x $50/hour + $5/stop among feasible routes.",
+      "reason": "OSRM returned a single route.",
+      "routes_compared": 1,
+      "options": [
+        {
+          "route_index": 0,
+          "distance_miles": 196.6,
+          "duration_hours": 3.58,
+          "extra_minutes_vs_fastest": 0,
+          "fuel_cost": 0,
+          "estimated_trip_fuel_cost": 52.83,
+          "driving_cost": 178.93,
+          "stop_cost": 0.0,
+          "total_operating_cost": 231.76,
+          "number_of_stops": 0,
+          "error": null,
+          "selected": true
+        }
+      ]
+    },
+    "vehicle": {
+      "range_miles": 500.0,
+      "miles_per_gallon": 10.0,
+      "tank_gallons": 50.0,
+      "start_fuel_gallons": 50.0,
+      "start_fuel_price_per_gallon": 2.68733,
+      "start_fuel_price_source": "lowest_imported_station_price",
+      "driver_truck_cost_per_hour": 50.0,
+      "assumption": "Fuel is bought only at stations on the route; the vehicle arrives with as little fuel as possible."
+    },
+    "fuel_stops": [],
+    "summary": {
+      "number_of_stops": 0,
+      "total_fuel_cost": 0,
+      "total_gallons_purchased": 0,
+      "total_gallons_used": 19.66,
+      "gallons_used_from_start_tank": 19.66,
+      "start_tank_fuel_value": 52.83,
+      "estimated_trip_fuel_cost": 52.83,
+      "estimated_driving_cost": 178.93,
+      "estimated_stop_cost": 0.0,
+      "estimated_total_operating_cost": 231.76,
+      "average_price_paid": null
+    },
+    "meta": {
+      "routing_api_calls": 0,
+      "route_from_cache": true,
+      "elapsed_ms": 1.0
+    }
+  },
+  {
+    "start": {
+      "query": "Detroit, MI",
+      "label": "Detroit, MI",
+      "latitude": 42.383023,
+      "longitude": -83.102229,
+      "source": "recorded_route"
+    },
+    "finish": {
+      "query": "Pittsburgh, PA",
+      "label": "Pittsburgh, PA",
+      "latitude": 40.439965,
+      "longitude": -79.975478,
+      "source": "recorded_route"
+    },
+    "route": {
+      "route_index": 0,
+      "distance_miles": 289.3,
+      "duration_hours": 5.5,
+      "stations_considered": 98
+    },
+    "route_selection": {
+      "rule": "Lowest whole-trip fuel cost + driving hours x $50/hour + $5/stop among feasible routes.",
+      "reason": "The fastest route has the lowest total operating cost, including fuel, driving time and stops.",
+      "routes_compared": 2,
+      "options": [
+        {
+          "route_index": 0,
+          "distance_miles": 289.3,
+          "duration_hours": 5.5,
+          "extra_minutes_vs_fastest": 0,
+          "fuel_cost": 0,
+          "estimated_trip_fuel_cost": 77.75,
+          "driving_cost": 274.79,
+          "stop_cost": 0.0,
+          "total_operating_cost": 352.54,
+          "number_of_stops": 0,
+          "error": null,
+          "selected": true
+        },
+        {
+          "route_index": 1,
+          "distance_miles": 315.7,
+          "duration_hours": 6.02,
+          "extra_minutes_vs_fastest": 31,
+          "fuel_cost": 0,
+          "estimated_trip_fuel_cost": 84.85,
+          "driving_cost": 300.86,
+          "stop_cost": 0.0,
+          "total_operating_cost": 385.71,
+          "number_of_stops": 0,
+          "error": null,
+          "selected": false
+        }
+      ]
+    },
+    "vehicle": {
+      "range_miles": 500.0,
+      "miles_per_gallon": 10.0,
+      "tank_gallons": 50.0,
+      "start_fuel_gallons": 50.0,
+      "start_fuel_price_per_gallon": 2.68733,
+      "start_fuel_price_source": "lowest_imported_station_price",
+      "driver_truck_cost_per_hour": 50.0,
+      "assumption": "Fuel is bought only at stations on the route; the vehicle arrives with as little fuel as possible."
+    },
+    "fuel_stops": [],
+    "summary": {
+      "number_of_stops": 0,
+      "total_fuel_cost": 0,
+      "total_gallons_purchased": 0,
+      "total_gallons_used": 28.93,
+      "gallons_used_from_start_tank": 28.93,
+      "start_tank_fuel_value": 77.75,
+      "estimated_trip_fuel_cost": 77.75,
+      "estimated_driving_cost": 274.79,
+      "estimated_stop_cost": 0.0,
+      "estimated_total_operating_cost": 352.54,
+      "average_price_paid": null
+    },
+    "meta": {
+      "routing_api_calls": 0,
+      "route_from_cache": true,
+      "elapsed_ms": 5.6
+    }
+  },
+  {
+    "start": {
+      "query": "Baltimore, MD",
+      "label": "Baltimore, MD",
+      "latitude": 39.300019,
+      "longitude": -76.610784,
+      "source": "recorded_route"
+    },
+    "finish": {
+      "query": "St. Louis, MO",
+      "label": "St. Louis, MO",
+      "latitude": 38.636005,
+      "longitude": -90.244475,
+      "source": "recorded_route"
+    },
+    "route": {
+      "route_index": 0,
+      "distance_miles": 837.3,
+      "duration_hours": 15.74,
+      "stations_considered": 151
+    },
+    "route_selection": {
+      "rule": "Lowest whole-trip fuel cost + driving hours x $50/hour + $5/stop among feasible routes.",
+      "reason": "The fastest route has the lowest total operating cost, including fuel, driving time and stops.",
+      "routes_compared": 2,
+      "options": [
+        {
+          "route_index": 0,
+          "distance_miles": 837.3,
+          "duration_hours": 15.74,
+          "extra_minutes_vs_fastest": 0,
+          "fuel_cost": 101.16,
+          "estimated_trip_fuel_cost": 235.53,
+          "driving_cost": 786.84,
+          "stop_cost": 5.0,
+          "total_operating_cost": 1027.36,
+          "number_of_stops": 1,
+          "error": null,
+          "selected": true
+        },
+        {
+          "route_index": 1,
+          "distance_miles": 869.1,
+          "duration_hours": 16.07,
+          "extra_minutes_vs_fastest": 20,
+          "fuel_cost": 108.08,
+          "estimated_trip_fuel_cost": 242.45,
+          "driving_cost": 803.71,
+          "stop_cost": 10.0,
+          "total_operating_cost": 1056.16,
+          "number_of_stops": 2,
+          "error": null,
+          "selected": false
+        }
+      ]
+    },
+    "vehicle": {
+      "range_miles": 500.0,
+      "miles_per_gallon": 10.0,
+      "tank_gallons": 50.0,
+      "start_fuel_gallons": 50.0,
+      "start_fuel_price_per_gallon": 2.68733,
+      "start_fuel_price_source": "lowest_imported_station_price",
+      "driver_truck_cost_per_hour": 50.0,
+      "assumption": "Fuel is bought only at stations on the route; the vehicle arrives with as little fuel as possible."
+    },
+    "fuel_stops": [
+      {
+        "stop_number": 1,
+        "opis_id": 72783,
+        "name": "SHEETZ #770",
+        "address": "I-70 & US-42",
+        "city": "London",
+        "state": "OH",
+        "latitude": 39.89285,
+        "longitude": -83.43887,
+        "price_per_gallon": 2.999,
+        "mile_marker": 441.5,
+        "distance_from_route_miles": 3.4,
+        "fuel_on_arrival_gallons": 5.85,
+        "gallons_purchased": 33.73,
+        "cost": 101.16
+      }
+    ],
+    "summary": {
+      "number_of_stops": 1,
+      "total_fuel_cost": 101.16,
+      "total_gallons_purchased": 33.73,
+      "total_gallons_used": 83.73,
+      "gallons_used_from_start_tank": 50.0,
+      "start_tank_fuel_value": 134.37,
+      "estimated_trip_fuel_cost": 235.53,
+      "estimated_driving_cost": 786.84,
+      "estimated_stop_cost": 5.0,
+      "estimated_total_operating_cost": 1027.36,
+      "average_price_paid": 2.999
+    },
+    "meta": {
+      "routing_api_calls": 0,
+      "route_from_cache": true,
+      "elapsed_ms": 10.2
+    }
+  },
+  {
+    "start": {
+      "query": "Tampa, FL",
+      "label": "Tampa, FL",
+      "latitude": 27.96634,
+      "longitude": -82.477517,
+      "source": "recorded_route"
+    },
+    "finish": {
+      "query": "Charlotte, NC",
+      "label": "Charlotte, NC",
+      "latitude": 35.20894,
+      "longitude": -80.831333,
+      "source": "recorded_route"
+    },
+    "route": {
+      "route_index": 0,
+      "distance_miles": 574.1,
+      "duration_hours": 10.95,
+      "stations_considered": 123
+    },
+    "route_selection": {
+      "rule": "Lowest whole-trip fuel cost + driving hours x $50/hour + $5/stop among feasible routes.",
+      "reason": "OSRM returned a single route.",
+      "routes_compared": 1,
+      "options": [
+        {
+          "route_index": 0,
+          "distance_miles": 574.1,
+          "duration_hours": 10.95,
+          "extra_minutes_vs_fastest": 0,
+          "fuel_cost": 22.23,
+          "estimated_trip_fuel_cost": 156.6,
+          "driving_cost": 547.4,
+          "stop_cost": 5.0,
+          "total_operating_cost": 709.0,
+          "number_of_stops": 1,
+          "error": null,
+          "selected": true
+        }
+      ]
+    },
+    "vehicle": {
+      "range_miles": 500.0,
+      "miles_per_gallon": 10.0,
+      "tank_gallons": 50.0,
+      "start_fuel_gallons": 50.0,
+      "start_fuel_price_per_gallon": 2.68733,
+      "start_fuel_price_source": "lowest_imported_station_price",
+      "driver_truck_cost_per_hour": 50.0,
+      "assumption": "Fuel is bought only at stations on the route; the vehicle arrives with as little fuel as possible."
+    },
+    "fuel_stops": [
+      {
+        "stop_number": 1,
+        "opis_id": 71283,
+        "name": "QUIKTRIP #7135",
+        "address": "US-17",
+        "city": "Hardeeville",
+        "state": "SC",
+        "latitude": 32.29531,
+        "longitude": -81.04098,
+        "price_per_gallon": 2.999,
+        "mile_marker": 341.5,
+        "distance_from_route_miles": 1.3,
+        "fuel_on_arrival_gallons": 15.85,
+        "gallons_purchased": 7.41,
+        "cost": 22.23
+      }
+    ],
+    "summary": {
+      "number_of_stops": 1,
+      "total_fuel_cost": 22.23,
+      "total_gallons_purchased": 7.41,
+      "total_gallons_used": 57.41,
+      "gallons_used_from_start_tank": 50.0,
+      "start_tank_fuel_value": 134.37,
+      "estimated_trip_fuel_cost": 156.6,
+      "estimated_driving_cost": 547.4,
+      "estimated_stop_cost": 5.0,
+      "estimated_total_operating_cost": 709.0,
+      "average_price_paid": 2.999
+    },
+    "meta": {
+      "routing_api_calls": 0,
+      "route_from_cache": true,
+      "elapsed_ms": 3.6
+    }
+  }
+]

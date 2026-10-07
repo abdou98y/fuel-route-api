@@ -1,0 +1,510 @@
+{
+  "info": {
+    "name": "Fuel Route API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {
+      "key": "base_url",
+      "value": "http://127.0.0.1:8000"
+    }
+  ],
+  "item": [
+    {
+      "name": "Plan route (GET) - New York to Los Angeles",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}/api/route/?start=New York, NY&finish=Los Angeles, CA",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "api",
+            "route",
+            ""
+          ],
+          "query": [
+            {
+              "key": "start",
+              "value": "New York, NY"
+            },
+            {
+              "key": "finish",
+              "value": "Los Angeles, CA"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Repeat route (GET) - New York to Los Angeles, cache check",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}/api/route/?start=New York, NY&finish=Los Angeles, CA",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "api",
+            "route",
+            ""
+          ],
+          "query": [
+            {
+              "key": "start",
+              "value": "New York, NY"
+            },
+            {
+              "key": "finish",
+              "value": "Los Angeles, CA"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Plan route (POST) - Chicago to Denver, 25 gal at start",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{base_url}}/api/route/",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "api",
+            "route",
+            ""
+          ]
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"start\": \"Chicago, IL\",\n  \"finish\": \"Denver, CO\",\n  \"start_fuel_gallons\": 25,\n  \"start_fuel_price_per_gallon\": 3.25\n}"
+        }
+      }
+    },
+    {
+      "name": "Compare total operating cost - Charlotte to Los Angeles",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}/api/route/?start=Charlotte, NC&finish=Los Angeles, CA",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "api",
+            "route",
+            ""
+          ],
+          "query": [
+            {
+              "key": "start",
+              "value": "Charlotte, NC"
+            },
+            {
+              "key": "finish",
+              "value": "Los Angeles, CA"
+            }
+          ]
+        },
+        "description": "With $50/hour driver + truck cost, the alternative fuel saving does not cover extra driving. Inspect route_selection.options and total_operating_cost."
+      }
+    },
+    {
+      "name": "Start with 10 gallons - Chicago to Denver",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}/api/route/?start=Chicago, IL&finish=Denver, CO&start_fuel_gallons=10",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "api",
+            "route",
+            ""
+          ],
+          "query": [
+            {
+              "key": "start",
+              "value": "Chicago, IL"
+            },
+            {
+              "key": "finish",
+              "value": "Denver, CO"
+            },
+            {
+              "key": "start_fuel_gallons",
+              "value": "10"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Plan route - street address + coordinates",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}/api/route/?start=1600 Pennsylvania Ave NW, Washington, DC&finish=25.7617,-80.1918",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "api",
+            "route",
+            ""
+          ],
+          "query": [
+            {
+              "key": "start",
+              "value": "1600 Pennsylvania Ave NW, Washington, DC"
+            },
+            {
+              "key": "finish",
+              "value": "25.7617,-80.1918"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Short trip - no stop needed",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}/api/route/?start=Dallas, TX&finish=Houston, TX",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "api",
+            "route",
+            ""
+          ],
+          "query": [
+            {
+              "key": "start",
+              "value": "Dallas, TX"
+            },
+            {
+              "key": "finish",
+              "value": "Houston, TX"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Map (HTML) - New York to Los Angeles",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}/api/route/map/?start=New York, NY&finish=Los Angeles, CA",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "api",
+            "route",
+            "map",
+            ""
+          ],
+          "query": [
+            {
+              "key": "start",
+              "value": "New York, NY"
+            },
+            {
+              "key": "finish",
+              "value": "Los Angeles, CA"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Error - outside USA (London)",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}/api/route/?start=51.5074,-0.1278&finish=Boston, MA",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "api",
+            "route",
+            ""
+          ],
+          "query": [
+            {
+              "key": "start",
+              "value": "51.5074,-0.1278"
+            },
+            {
+              "key": "finish",
+              "value": "Boston, MA"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Error - missing finish",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}/api/route/?start=Boston, MA",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "api",
+            "route",
+            ""
+          ],
+          "query": [
+            {
+              "key": "start",
+              "value": "Boston, MA"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Error - not enough starting fuel (0 gal)",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}/api/route/?start=Dallas, TX&finish=Houston, TX&start_fuel_gallons=0",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "api",
+            "route",
+            ""
+          ],
+          "query": [
+            {
+              "key": "start",
+              "value": "Dallas, TX"
+            },
+            {
+              "key": "finish",
+              "value": "Houston, TX"
+            },
+            {
+              "key": "start_fuel_gallons",
+              "value": "0"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Error - start fuel above tank size (60 gal)",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}/api/route/?start=Dallas, TX&finish=Houston, TX&start_fuel_gallons=60",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "api",
+            "route",
+            ""
+          ],
+          "query": [
+            {
+              "key": "start",
+              "value": "Dallas, TX"
+            },
+            {
+              "key": "finish",
+              "value": "Houston, TX"
+            },
+            {
+              "key": "start_fuel_gallons",
+              "value": "60"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Short trip - starting fuel valued at $3.25 per gallon",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}/api/route/?start=Dallas, TX&finish=Houston, TX&start_fuel_price_per_gallon=3.25",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "api",
+            "route",
+            ""
+          ],
+          "query": [
+            {
+              "key": "start",
+              "value": "Dallas, TX"
+            },
+            {
+              "key": "finish",
+              "value": "Houston, TX"
+            },
+            {
+              "key": "start_fuel_price_per_gallon",
+              "value": "3.25"
+            }
+          ]
+        },
+        "description": "No purchases needed, but starting fuel consumed is included in estimated_trip_fuel_cost. Unused fuel remains in the tank."
+      }
+    },
+    {
+      "name": "Error - negative starting fuel price",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}/api/route/?start=Dallas, TX&finish=Houston, TX&start_fuel_price_per_gallon=-1",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "api",
+            "route",
+            ""
+          ],
+          "query": [
+            {
+              "key": "start",
+              "value": "Dallas, TX"
+            },
+            {
+              "key": "finish",
+              "value": "Houston, TX"
+            },
+            {
+              "key": "start_fuel_price_per_gallon",
+              "value": "-1"
+            }
+          ]
+        },
+        "description": "Expected HTTP 400: price must be finite and nonnegative."
+      }
+    }
+  ],
+  "event": [
+    {
+      "listen": "test",
+      "script": {
+        "type": "text/javascript",
+        "exec": [
+          "const name = pm.info.requestName;",
+          "const isError = name.startsWith(\"Error -\");",
+          "const isMap = name.startsWith(\"Map (HTML)\");",
+          "const status = isError ? (name.includes(\"not enough\") ? 422 : 400) : 200;",
+          "pm.test(\"Expected HTTP status\", () => pm.response.to.have.status(status));",
+          "if (isMap) {",
+          "  pm.test(\"HTML contains map and embedded GeoJSON\", () => {",
+          "    pm.expect(pm.response.headers.get(\"Content-Type\")).to.include(\"text/html\");",
+          "    pm.expect(pm.response.text()).to.include('id=\"route-data\"');",
+          "    pm.expect(pm.response.text()).to.include('L.geoJSON');",
+          "  });",
+          "} else if (isError) {",
+          "  pm.test(\"Error has a useful message\", () => {",
+          "    const r = pm.response.json();",
+          "    pm.expect(Boolean(r.error || r.errors)).to.equal(true);",
+          "  });",
+          "} else {",
+          "  const r = pm.response.json(), v = r.vehicle, s = r.summary, stops = r.fuel_stops;",
+          "  const close = (a, b, tolerance) => pm.expect(Math.abs(a-b)).to.be.below(tolerance);",
+          "  pm.test(\"500-mile range, 10 MPG and 50-gallon tank\", () => {",
+          "    pm.expect(v.range_miles).to.equal(500);",
+          "    pm.expect(v.miles_per_gallon).to.equal(10);",
+          "    pm.expect(v.tank_gallons).to.equal(50);",
+          "  });",
+          "  pm.test(\"Gallons used match distance / MPG\", () => close(s.total_gallons_used, r.route.distance_miles / 10, 0.011));",
+          "  pm.test(\"Purchase totals match recommended stops\", () => {",
+          "    pm.expect(s.number_of_stops).to.equal(stops.length);",
+          "    close(s.total_gallons_purchased, stops.reduce((n, x) => n+x.gallons_purchased, 0), .011 + stops.length*.005);",
+          "    close(s.total_fuel_cost, stops.reduce((n, x) => n+x.cost, 0), .011 + stops.length*.005);",
+          "  });",
+          "  pm.test(\"Starting fuel and operating costs are accounted for\", () => {",
+          "    close(s.start_tank_fuel_value, s.gallons_used_from_start_tank*v.start_fuel_price_per_gallon, .011 + .005*v.start_fuel_price_per_gallon);",
+          "    close(s.estimated_trip_fuel_cost, s.total_fuel_cost+s.start_tank_fuel_value, .021);",
+          "    close(s.estimated_total_operating_cost, s.estimated_trip_fuel_cost+s.estimated_driving_cost+s.estimated_stop_cost, .031);",
+          "  });",
+          "  pm.test(\"Truck reaches every stop without exceeding tank capacity\", () => {",
+          "    let fuel = v.start_fuel_gallons, mile = 0;",
+          "    for (const stop of stops) {",
+          "      fuel -= (stop.mile_marker-mile)/10;",
+          "      pm.expect(fuel).to.be.at.least(-.04);",
+          "      close(fuel, stop.fuel_on_arrival_gallons, .04);",
+          "      fuel += stop.gallons_purchased;",
+          "      pm.expect(fuel).to.be.at.most(50.04);",
+          "      mile = stop.mile_marker;",
+          "    }",
+          "    fuel -= (r.route.distance_miles-mile)/10;",
+          "    pm.expect(fuel).to.be.at.least(-.06);",
+          "    pm.expect(fuel).to.be.at.most(50.06);",
+          "  });",
+          "  pm.test(\"Selected road has the lowest feasible operating cost\", () => {",
+          "    const selected = r.route_selection.options.filter(x => x.selected);",
+          "    pm.expect(selected.length).to.equal(1);",
+          "    pm.expect(selected[0].route_index).to.equal(r.route.route_index);",
+          "    for (const x of r.route_selection.options.filter(x => x.error === null))",
+          "      pm.expect(selected[0].total_operating_cost).to.be.at.most(x.total_operating_cost+.01);",
+          "  });",
+          "  pm.test(\"GeoJSON contains route, endpoints and all fuel stops\", () => {",
+          "    pm.expect(r.map.type).to.equal(\"FeatureCollection\");",
+          "    const kinds = r.map.features.map(x => x.properties.kind);",
+          "    pm.expect(kinds).to.include(\"route\");",
+          "    pm.expect(kinds).to.include(\"start\");",
+          "    pm.expect(kinds).to.include(\"finish\");",
+          "    pm.expect(kinds.filter(x => x === \"fuel_stop\").length).to.equal(stops.length);",
+          "  });",
+          "  pm.test(\"At most one routing API call per request\", () => pm.expect(r.meta.routing_api_calls).to.be.at.most(1));",
+          "  if (name.startsWith(\"Repeat route\")) pm.test(\"Repeat route uses cache: zero routing calls\", () => {",
+          "    pm.expect(r.meta.route_from_cache).to.equal(true);",
+          "    pm.expect(r.meta.routing_api_calls).to.equal(0);",
+          "  });",
+          "  if (name.startsWith(\"Short trip\")) pm.test(\"Short trip needs no fuel purchases\", () => {",
+          "    pm.expect(stops.length).to.equal(0);",
+          "    pm.expect(s.total_fuel_cost).to.equal(0);",
+          "    pm.expect(s.estimated_trip_fuel_cost).to.be.above(0);",
+          "  });",
+          "}"
+        ]
+      }
+    }
+  ]
+}

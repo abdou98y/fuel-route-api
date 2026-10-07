@@ -1,0 +1,837 @@
+{
+  "utc_date": "2026-10-06T07:36:11Z",
+  "machine": {
+    "platform": "Linux-7.0.0-34-generic-x86_64-with-glibc2.39",
+    "cpu_count": 20,
+    "python": "3.12.3"
+  },
+  "rows": [
+    {
+      "trip": "Charlotte, NC -> Los Angeles, CA",
+      "requested_alternatives": 3,
+      "status": 200,
+      "bytes": 1177991,
+      "osrm_ms": 684.1633349995391,
+      "code": "Ok",
+      "routes_returned": 2,
+      "planner_ms": [
+        12.406027999531943,
+        7.666503999644192,
+        7.304238999495283,
+        7.2744280005281325,
+        7.377887999609811,
+        9.952504000466433,
+        9.837632000198937,
+        9.747719999722904,
+        9.611482000764227,
+        9.520661000351538
+      ]
+    },
+    {
+      "trip": "Charlotte, NC -> Los Angeles, CA",
+      "requested_alternatives": 5,
+      "status": 400,
+      "bytes": 97,
+      "osrm_ms": 70.57099199846562,
+      "code": "TooBig",
+      "routes_returned": 0,
+      "planner_ms": []
+    },
+    {
+      "trip": "Charlotte, NC -> Los Angeles, CA",
+      "requested_alternatives": 10,
+      "status": 400,
+      "bytes": 97,
+      "osrm_ms": 66.0099810011161,
+      "code": "TooBig",
+      "routes_returned": 0,
+      "planner_ms": []
+    },
+    {
+      "trip": "Charlotte, NC -> Los Angeles, CA",
+      "requested_alternatives": 20,
+      "status": 400,
+      "bytes": 97,
+      "osrm_ms": 64.09939900004247,
+      "code": "TooBig",
+      "routes_returned": 0,
+      "planner_ms": []
+    },
+    {
+      "trip": "Kansas City, MO -> Las Vegas, NV",
+      "requested_alternatives": 3,
+      "status": 200,
+      "bytes": 711782,
+      "osrm_ms": 376.4131230000203,
+      "code": "Ok",
+      "routes_returned": 2,
+      "planner_ms": [
+        3.0633049991592998,
+        2.9183429996919585,
+        2.8982150015508523,
+        2.9729559992119903,
+        2.9103189990564715,
+        2.5866270007099956,
+        2.5467119994573295,
+        2.5504999994154787,
+        2.552335001382744,
+        2.5447640000493266
+      ]
+    },
+    {
+      "trip": "Kansas City, MO -> Las Vegas, NV",
+      "requested_alternatives": 5,
+      "status": 400,
+      "bytes": 97,
+      "osrm_ms": 63.04560799981118,
+      "code": "TooBig",
+      "routes_returned": 0,
+      "planner_ms": []
+    },
+    {
+      "trip": "Kansas City, MO -> Las Vegas, NV",
+      "requested_alternatives": 10,
+      "status": 400,
+      "bytes": 97,
+      "osrm_ms": 67.03125000058208,
+      "code": "TooBig",
+      "routes_returned": 0,
+      "planner_ms": []
+    },
+    {
+      "trip": "Kansas City, MO -> Las Vegas, NV",
+      "requested_alternatives": 20,
+      "status": 400,
+      "bytes": 97,
+      "osrm_ms": 67.51137199898949,
+      "code": "TooBig",
+      "routes_returned": 0,
+      "planner_ms": []
+    },
+    {
+      "trip": "Chicago, IL -> Denver, CO",
+      "requested_alternatives": 3,
+      "status": 200,
+      "bytes": 455218,
+      "osrm_ms": 327.8658950002864,
+      "code": "Ok",
+      "routes_returned": 2,
+      "planner_ms": [
+        4.910308000035002,
+        7.25094199879095,
+        4.805763999684132,
+        4.97944299968367,
+        4.782809000971611,
+        4.0296770002896665,
+        4.002588999355794,
+        3.963871000451036,
+        4.016556000351557,
+        3.9888709998194827
+      ]
+    },
+    {
+      "trip": "Chicago, IL -> Denver, CO",
+      "requested_alternatives": 5,
+      "status": 400,
+      "bytes": 97,
+      "osrm_ms": 65.07972399958817,
+      "code": "TooBig",
+      "routes_returned": 0,
+      "planner_ms": []
+    },
+    {
+      "trip": "Chicago, IL -> Denver, CO",
+      "requested_alternatives": 10,
+      "status": 400,
+      "bytes": 97,
+      "osrm_ms": 69.50642400079232,
+      "code": "TooBig",
+      "routes_returned": 0,
+      "planner_ms": []
+    },
+    {
+      "trip": "Chicago, IL -> Denver, CO",
+      "requested_alternatives": 20,
+      "status": 400,
+      "bytes": 97,
+      "osrm_ms": 62.77138299992657,
+      "code": "TooBig",
+      "routes_returned": 0,
+      "planner_ms": []
+    },
+    {
+      "trip": "Dallas, TX -> Houston, TX",
+      "requested_alternatives": 3,
+      "status": 200,
+      "bytes": 54932,
+      "osrm_ms": 148.38292300009925,
+      "code": "Ok",
+      "routes_returned": 1,
+      "planner_ms": [
+        0.7832520004740218,
+        0.717566999810515,
+        0.7019229997240473,
+        0.6600199994863942,
+        0.886822999746073
+      ]
+    },
+    {
+      "trip": "Dallas, TX -> Houston, TX",
+      "requested_alternatives": 5,
+      "status": 400,
+      "bytes": 97,
+      "osrm_ms": 66.5993750008056,
+      "code": "TooBig",
+      "routes_returned": 0,
+      "planner_ms": []
+    },
+    {
+      "trip": "Dallas, TX -> Houston, TX",
+      "requested_alternatives": 10,
+      "status": 400,
+      "bytes": 97,
+      "osrm_ms": 66.88733299961314,
+      "code": "TooBig",
+      "routes_returned": 0,
+      "planner_ms": []
+    },
+    {
+      "trip": "Dallas, TX -> Houston, TX",
+      "requested_alternatives": 20,
+      "status": 400,
+      "bytes": 97,
+      "osrm_ms": 67.68274099886185,
+      "code": "TooBig",
+      "routes_returned": 0,
+      "planner_ms": []
+    },
+    {
+      "trip": "New York, NY -> Los Angeles, CA",
+      "requested_alternatives": 3,
+      "status": 200,
+      "bytes": 1572751,
+      "osrm_ms": 565.1071390002471,
+      "code": "Ok",
+      "routes_returned": 2,
+      "planner_ms": [
+        24.195089999921038,
+        18.67379999930563,
+        18.065027999909944,
+        18.484373998944648,
+        43.39375400013523,
+        13.08146500014118,
+        12.897839000288513,
+        12.936900999193313,
+        13.163249001081567,
+        12.8699159995449
+      ]
+    },
+    {
+      "trip": "New York, NY -> Los Angeles, CA",
+      "requested_alternatives": 5,
+      "status": 400,
+      "bytes": 97,
+      "osrm_ms": 67.41554299878771,
+      "code": "TooBig",
+      "routes_returned": 0,
+      "planner_ms": []
+    },
+    {
+      "trip": "New York, NY -> Los Angeles, CA",
+      "requested_alternatives": 10,
+      "status": 400,
+      "bytes": 97,
+      "osrm_ms": 66.50897100007569,
+      "code": "TooBig",
+      "routes_returned": 0,
+      "planner_ms": []
+    },
+    {
+      "trip": "New York, NY -> Los Angeles, CA",
+      "requested_alternatives": 20,
+      "status": 400,
+      "bytes": 97,
+      "osrm_ms": 63.23913000051107,
+      "code": "TooBig",
+      "routes_returned": 0,
+      "planner_ms": []
+    },
+    {
+      "trip": "Chicago, IL -> Albuquerque, NM",
+      "requested_alternatives": 3,
+      "status": 200,
+      "bytes": 613914,
+      "osrm_ms": 406.2184989998059,
+      "code": "Ok",
+      "routes_returned": 2,
+      "planner_ms": [
+        5.70545299888181,
+        7.879520000642515,
+        5.6237720000353875,
+        5.609669000477879,
+        5.587853000179166,
+        4.666446000555879,
+        4.598818999511423,
+        4.723031001049094,
+        4.600661999575095,
+        4.584537000482669
+      ]
+    },
+    {
+      "trip": "Chicago, IL -> Albuquerque, NM",
+      "requested_alternatives": 5,
+      "status": 400,
+      "bytes": 97,
+      "osrm_ms": 67.36356299916224,
+      "code": "TooBig",
+      "routes_returned": 0,
+      "planner_ms": []
+    },
+    {
+      "trip": "Chicago, IL -> Albuquerque, NM",
+      "requested_alternatives": 10,
+      "status": 400,
+      "bytes": 97,
+      "osrm_ms": 66.5172849985538,
+      "code": "TooBig",
+      "routes_returned": 0,
+      "planner_ms": []
+    },
+    {
+      "trip": "Chicago, IL -> Albuquerque, NM",
+      "requested_alternatives": 20,
+      "status": 400,
+      "bytes": 97,
+      "osrm_ms": 69.41492199985078,
+      "code": "TooBig",
+      "routes_returned": 0,
+      "planner_ms": []
+    },
+    {
+      "trip": "Oklahoma City, OK -> Boise, ID",
+      "requested_alternatives": 3,
+      "status": 200,
+      "bytes": 721530,
+      "osrm_ms": 410.6877459998941,
+      "code": "Ok",
+      "routes_returned": 2,
+      "planner_ms": [
+        4.040589001306216,
+        3.7462609998328844,
+        3.733192001163843,
+        3.757404001589748,
+        3.7508509994950145,
+        3.454785000940319,
+        3.423621999900206,
+        3.4156629990320653,
+        3.3855680012493394,
+        3.5463389995129546
+      ]
+    },
+    {
+      "trip": "Oklahoma City, OK -> Boise, ID",
+      "requested_alternatives": 5,
+      "status": 400,
+      "bytes": 97,
+      "osrm_ms": 79.44862400108832,
+      "code": "TooBig",
+      "routes_returned": 0,
+      "planner_ms": []
+    },
+    {
+      "trip": "Oklahoma City, OK -> Boise, ID",
+      "requested_alternatives": 10,
+      "status": 400,
+      "bytes": 97,
+      "osrm_ms": 65.25821600007475,
+      "code": "TooBig",
+      "routes_returned": 0,
+      "planner_ms": []
+    },
+    {
+      "trip": "Oklahoma City, OK -> Boise, ID",
+      "requested_alternatives": 20,
+      "status": 400,
+      "bytes": 97,
+      "osrm_ms": 808.4516449998773,
+      "code": "TooBig",
+      "routes_returned": 0,
+      "planner_ms": []
+    },
+    {
+      "trip": "Salt Lake City, UT -> Jacksonville, FL",
+      "requested_alternatives": 3,
+      "status": 200,
+      "bytes": 1089182,
+      "osrm_ms": 855.3192690014839,
+      "code": "Ok",
+      "routes_returned": 2,
+      "planner_ms": [
+        11.214669000764843,
+        18.03293000011763,
+        10.960995999994338,
+        10.872480999751133,
+        11.098196999228094,
+        7.863816999815754,
+        7.946739000544767,
+        7.76097000016307,
+        7.859638000809355,
+        7.892989999163547
+      ]
+    },
+    {
+      "trip": "Salt Lake City, UT -> Jacksonville, FL",
+      "requested_alternatives": 5,
+      "status": 400,
+      "bytes": 97,
+      "osrm_ms": 68.67608900029154,
+      "code": "TooBig",
+      "routes_returned": 0,
+      "planner_ms": []
+    },
+    {
+      "trip": "Salt Lake City, UT -> Jacksonville, FL",
+      "requested_alternatives": 10,
+      "status": 400,
+      "bytes": 97,
+      "osrm_ms": 73.67830400107778,
+      "code": "TooBig",
+      "routes_returned": 0,
+      "planner_ms": []
+    },
+    {
+      "trip": "Salt Lake City, UT -> Jacksonville, FL",
+      "requested_alternatives": 20,
+      "status": 400,
+      "bytes": 97,
+      "osrm_ms": 64.85301399879972,
+      "code": "TooBig",
+      "routes_returned": 0,
+      "planner_ms": []
+    },
+    {
+      "trip": "Atlanta, GA -> Miami, FL",
+      "requested_alternatives": 3,
+      "status": 200,
+      "bytes": 129448,
+      "osrm_ms": 427.7387920010369,
+      "code": "Ok",
+      "routes_returned": 1,
+      "planner_ms": [
+        2.5341750006191432,
+        2.4269519999506883,
+        2.4213199994846946,
+        2.3820930000511,
+        2.3816729990358
+      ]
+    },
+    {
+      "trip": "Seattle, WA -> San Francisco, CA",
+      "requested_alternatives": 3,
+      "status": 200,
+      "bytes": 335735,
+      "osrm_ms": 292.7021870000317,
+      "code": "Ok",
+      "routes_returned": 1,
+      "planner_ms": [
+        1.5158900005189935,
+        1.427445999070187,
+        1.4241659991967026,
+        1.4083730002312222,
+        1.4231770001060795
+      ]
+    },
+    {
+      "trip": "Boston, MA -> Washington, DC",
+      "requested_alternatives": 3,
+      "status": 200,
+      "bytes": 576095,
+      "osrm_ms": 319.6956939991651,
+      "code": "Ok",
+      "routes_returned": 2,
+      "planner_ms": [
+        4.436641998836421,
+        7.7801659990655025,
+        4.441980001502088,
+        4.481404999751248,
+        4.446897999514476,
+        4.429500000696862,
+        4.3952449996140786,
+        4.38188099906256,
+        4.497193000133848,
+        4.364656000689138
+      ]
+    },
+    {
+      "trip": "Phoenix, AZ -> San Diego, CA",
+      "requested_alternatives": 3,
+      "status": 200,
+      "bytes": 184648,
+      "osrm_ms": 163.90176200002315,
+      "code": "Ok",
+      "routes_returned": 2,
+      "planner_ms": [
+        0.8037380011955975,
+        0.7281559992406983,
+        0.7056619997456437,
+        0.7034050013317028,
+        0.705119999111048,
+        0.7307849991775583,
+        0.7169809996412368,
+        0.7152689995564288,
+        0.7060409989207983,
+        0.7020570010354277
+      ]
+    },
+    {
+      "trip": "Memphis, TN -> Dallas, TX",
+      "requested_alternatives": 3,
+      "status": 200,
+      "bytes": 220875,
+      "osrm_ms": 237.14638599994942,
+      "code": "Ok",
+      "routes_returned": 2,
+      "planner_ms": [
+        1.3927469990449026,
+        1.3223160003690282,
+        1.3107579998177243,
+        1.317483000093489,
+        1.4716749992658151,
+        1.406977999067749,
+        1.3705649998883018,
+        1.3608979988930514,
+        1.3667149996763328,
+        1.3533420005842345
+      ]
+    },
+    {
+      "trip": "Minneapolis, MN -> Nashville, TN",
+      "requested_alternatives": 3,
+      "status": 200,
+      "bytes": 532283,
+      "osrm_ms": 449.7235409999121,
+      "code": "Ok",
+      "routes_returned": 2,
+      "planner_ms": [
+        4.831988000660203,
+        8.301478999783285,
+        24.258344999907422,
+        4.945611000948702,
+        4.848388000027626,
+        4.365205999420141,
+        4.116037000130746,
+        4.073547999723814,
+        4.101032000107807,
+        4.082549001395819
+      ]
+    },
+    {
+      "trip": "Portland, OR -> Denver, CO",
+      "requested_alternatives": 3,
+      "status": 200,
+      "bytes": 314120,
+      "osrm_ms": 305.44626300070377,
+      "code": "Ok",
+      "routes_returned": 1,
+      "planner_ms": [
+        2.9728600002272287,
+        2.8684389999398263,
+        2.872235998438555,
+        2.9421449999063043,
+        2.8608129996428033
+      ]
+    },
+    {
+      "trip": "Indianapolis, IN -> New Orleans, LA",
+      "requested_alternatives": 3,
+      "status": 200,
+      "bytes": 412096,
+      "osrm_ms": 390.50843800032453,
+      "code": "Ok",
+      "routes_returned": 2,
+      "planner_ms": [
+        3.921624000213342,
+        3.8515810010721907,
+        3.557481999450829,
+        3.5246360002929578,
+        3.552313000909635,
+        3.290489999926649,
+        3.102057999058161,
+        3.024532001290936,
+        3.02460999955656,
+        3.0057429994485574
+      ]
+    },
+    {
+      "trip": "Houston, TX -> San Antonio, TX",
+      "requested_alternatives": 3,
+      "status": 200,
+      "bytes": 40107,
+      "osrm_ms": 146.70294099960302,
+      "code": "Ok",
+      "routes_returned": 1,
+      "planner_ms": [
+        0.5777060014224844,
+        0.6938229998922907,
+        0.5082280003989581,
+        0.4983569997421,
+        0.49045599917008076
+      ]
+    },
+    {
+      "trip": "Detroit, MI -> Pittsburgh, PA",
+      "requested_alternatives": 3,
+      "status": 200,
+      "bytes": 221191,
+      "osrm_ms": 265.9908670011646,
+      "code": "Ok",
+      "routes_returned": 2,
+      "planner_ms": [
+        2.315603998795268,
+        2.1946970009594224,
+        2.2915740009921137,
+        2.258201999211451,
+        2.3149850003392203,
+        2.445488000375917,
+        2.3866789997555315,
+        2.361574999667937,
+        2.4304149992531165,
+        2.4036779996094992
+      ]
+    },
+    {
+      "trip": "Baltimore, MD -> St. Louis, MO",
+      "requested_alternatives": 3,
+      "status": 200,
+      "bytes": 652128,
+      "osrm_ms": 477.88616700017883,
+      "code": "Ok",
+      "routes_returned": 2,
+      "planner_ms": [
+        4.17426800049725,
+        4.100268000911456,
+        4.044339000756736,
+        3.998733000116772,
+        4.227729001286207,
+        3.072636000069906,
+        2.9663349996553734,
+        2.9955560003145365,
+        3.012849998413003,
+        2.98179699893808
+      ]
+    },
+    {
+      "trip": "Tampa, FL -> Charlotte, NC",
+      "requested_alternatives": 3,
+      "status": 200,
+      "bytes": 135319,
+      "osrm_ms": 228.78133499943942,
+      "code": "Ok",
+      "routes_returned": 1,
+      "planner_ms": [
+        2.2505870001623407,
+        2.202944000600837,
+        2.1770309995190473,
+        2.366362999964622,
+        2.194622999013518
+      ]
+    }
+  ],
+  "by_requested_alternatives": {
+    "3": {
+      "requests": 20,
+      "successful": 20,
+      "routes_returned": {
+        "mean": 1.7,
+        "median": 2.0,
+        "p95": 2,
+        "max": 2
+      },
+      "osrm_ms": {
+        "mean": 374.019,
+        "median": 352.14,
+        "p95": 855.319,
+        "max": 855.319
+      },
+      "response_bytes": {
+        "mean": 507567.25,
+        "median": 433657.0,
+        "p95": 1572751,
+        "max": 1572751
+      },
+      "planner_ms_per_route": {
+        "mean": 4.853,
+        "median": 3.535,
+        "p95": 13.081,
+        "max": 43.394
+      }
+    },
+    "5": {
+      "requests": 8,
+      "successful": 0,
+      "routes_returned": null,
+      "osrm_ms": null,
+      "response_bytes": null,
+      "planner_ms_per_route": null
+    },
+    "10": {
+      "requests": 8,
+      "successful": 0,
+      "routes_returned": null,
+      "osrm_ms": null,
+      "response_bytes": null,
+      "planner_ms_per_route": null
+    },
+    "20": {
+      "requests": 8,
+      "successful": 0,
+      "routes_returned": null,
+      "osrm_ms": null,
+      "response_bytes": null,
+      "planner_ms_per_route": null
+    }
+  },
+  "warm_threaded_concurrency": [
+    {
+      "users": 1,
+      "repetitions": 5,
+      "batch_ms": {
+        "mean": 17.359,
+        "median": 17.178,
+        "p95": 18.303,
+        "max": 18.303
+      },
+      "request_processing_ms": {
+        "mean": 16.897,
+        "median": 16.754,
+        "p95": 17.598,
+        "max": 17.598
+      },
+      "requests_per_second": 57.61
+    },
+    {
+      "users": 5,
+      "repetitions": 5,
+      "batch_ms": {
+        "mean": 53.284,
+        "median": 51.755,
+        "p95": 67.282,
+        "max": 67.282
+      },
+      "request_processing_ms": {
+        "mean": 27.262,
+        "median": 30.527,
+        "p95": 53.725,
+        "max": 66.019
+      },
+      "requests_per_second": 93.84
+    },
+    {
+      "users": 10,
+      "repetitions": 5,
+      "batch_ms": {
+        "mean": 68.32,
+        "median": 73.613,
+        "p95": 75.745,
+        "max": 75.745
+      },
+      "request_processing_ms": {
+        "mean": 36.681,
+        "median": 41.875,
+        "p95": 71.35,
+        "max": 73.616
+      },
+      "requests_per_second": 146.37
+    },
+    {
+      "users": 25,
+      "repetitions": 5,
+      "batch_ms": {
+        "mean": 217.988,
+        "median": 218.226,
+        "p95": 239.505,
+        "max": 239.505
+      },
+      "request_processing_ms": {
+        "mean": 122.001,
+        "median": 145.649,
+        "p95": 207.266,
+        "max": 235.727
+      },
+      "requests_per_second": 114.69
+    },
+    {
+      "users": 50,
+      "repetitions": 5,
+      "batch_ms": {
+        "mean": 375.829,
+        "median": 371.723,
+        "p95": 407.362,
+        "max": 407.362
+      },
+      "request_processing_ms": {
+        "mean": 207.667,
+        "median": 249.391,
+        "p95": 361.95,
+        "max": 401.206
+      },
+      "requests_per_second": 133.04
+    }
+  ],
+  "synthetic_route_counts": [
+    {
+      "total_routes": 1,
+      "processing_ms": {
+        "mean": 3.879,
+        "median": 2.711,
+        "p95": 11.18,
+        "max": 21.609
+      }
+    },
+    {
+      "total_routes": 2,
+      "processing_ms": {
+        "mean": 8.27,
+        "median": 6.049,
+        "p95": 31.088,
+        "max": 31.748
+      }
+    },
+    {
+      "total_routes": 4,
+      "processing_ms": {
+        "mean": 16.503,
+        "median": 11.935,
+        "p95": 63.038,
+        "max": 81.529
+      }
+    },
+    {
+      "total_routes": 6,
+      "processing_ms": {
+        "mean": 24.468,
+        "median": 17.868,
+        "p95": 93.822,
+        "max": 115.71
+      }
+    },
+    {
+      "total_routes": 11,
+      "processing_ms": {
+        "mean": 45.505,
+        "median": 33.04,
+        "p95": 175.134,
+        "max": 193.053
+      }
+    },
+    {
+      "total_routes": 21,
+      "processing_ms": {
+        "mean": 58.064,
+        "median": 36.56,
+        "p95": 225.423,
+        "max": 297.575
+      }
+    }
+  ]
+}
